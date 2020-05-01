@@ -1,0 +1,18 @@
+<package>
+  <description brief="ORCAStar">
+
+     ORCAStar
+
+  </description>
+  <author>Stepan Drgachev</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ORCAStar</url>
+  <depend package="std_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="visualization_msgs"/>
+  <depend package="roscpp"/>
+
+</package>
+
+

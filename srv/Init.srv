@@ -1,0 +1,12 @@
+---
+int64 id
+geometry_msgs/Point32 start
+geometry_msgs/Point32 goal
+float32 radius
+float32 speed
+int64 agentMaxNum
+float32 timeBoundary
+float32 sightRadius
+float32 timeBoundaryObst
+float32 delta
+geometry_msgs/Polygon[] Obstacles
