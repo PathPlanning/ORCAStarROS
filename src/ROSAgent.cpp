@@ -12,7 +12,7 @@ ROSAgent::ROSAgent(size_t id)
     if (client.call(srv))
     {
         client.shutdown();
-        ROS_INFO("Agent %lu Parameters received!", id);
+        ROS_DEBUG("Agent %lu Parameters received!", id);
     }
     else
     {
@@ -54,7 +54,7 @@ ROSAgent::ROSAgent(size_t id)
     if(mapClint.call(mapSrv))
     {
         mapClint.shutdown();
-        ROS_INFO("Agent %lu Map received!", id);
+        ROS_DEBUG("Agent %lu Map received!", id);
     }
     else
     {
@@ -84,13 +84,13 @@ ROSAgent::ROSAgent(size_t id)
     map = new Map(cs, grid, obstacles);
 
 
-    ROS_INFO("Map %lu Created!", id);
+    ROS_DEBUG("Map %lu Created!", id);
 
     agent = new ORCAAgent(0, start, goal, *map, *options, *param);
     agent->SetPlanner(ThetaStar(*map, *options, agent->GetStart(), agent->GetGoal(), param->radius + param->rEps));
     agent->InitPath();
 
-    ROS_INFO("Agent %lu Created!", id);
+    ROS_DEBUG("Agent %lu Created!", id);
 
     std::stringstream inpTopicName;
     inpTopicName << "AgentInput_" << id;
@@ -101,7 +101,7 @@ ROSAgent::ROSAgent(size_t id)
     ROSAgentPub = n.advertise<geometry_msgs::Point32>(outTopicName.str(), 1000);;
 
 
-    ROS_INFO("Agent %lu Topics Created!", id);
+    ROS_DEBUG("Agent %lu Topics Created!", id);
 
     ros::spin();
 
@@ -126,12 +126,17 @@ void ROSAgent::DoStep(const ORCAStar::ORCAInput &msg)
         Point nPos = {msg.neighbours.pos[i].x, msg.neighbours.pos[i].y};
         Point nVel = {msg.neighbours.vel[i].x, msg.neighbours.vel[i].y};
 
+        tmpAgent->SetPosition(nPos);
+        tmpAgent->SetVelocity(nVel);
+
         float distSq = (agent->GetPosition()-nPos).SquaredEuclideanNorm();
         agent->AddNeighbour(*tmpAgent, distSq);
     }
 
     agent->UpdatePrefVelocity();
     agent->UpdateNeighbourObst();
+
+
     agent->ComputeNewVelocity();
     agent->ApplyNewVelocity();
 
@@ -147,6 +152,6 @@ void ROSAgent::DoStep(const ORCAStar::ORCAInput &msg)
 
     neighbous.clear();
 
-
+    ROS_DEBUG("Agent %lu Do Step!", agentId);
     ROSAgentPub.publish(vel);
 }

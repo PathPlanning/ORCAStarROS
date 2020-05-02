@@ -1,4 +1,3 @@
-# TODO refactor CMakeLists.txtx
 
 cmake_minimum_required(VERSION 3.5)
 set (CMAKE_PREFIX_PATH "/opt/ros/kinetic")
@@ -11,9 +10,13 @@ set (CMAKE_CXX_STANDARD 14)
 #  Release        : w/o debug symbols, w/ optimization
 #  RelWithDebInfo : w/ debug symbols, w/ optimization
 #  MinSizeRel     : w/o debug symbols, w/ optimization, stripped binaries
-#set(ROS_BUILD_TYPE RelWithDebInfo)
+#set(ROS_BUILD_TYPE Debug)
 
 rosbuild_init()
+
+
+find_package(gtest)
+
 
 #set the default path for built executables to the "bin" directory
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
@@ -34,10 +37,24 @@ rosbuild_add_executable(ROSMission src/StartMission.cpp src/ROSMission.h src/ROS
 rosbuild_add_executable(ROSAgent src/StartAgent.cpp src/ROSAgent.h src/ROSAgent.cpp)
 rosbuild_add_executable(ROSVisualization src/StartVisualization.cpp)
 
+
+
+
 target_link_libraries(ROSSimActor ORCAStarLib TINYXML)
 target_link_libraries(ROSMission ORCAStarLib TINYXML)
 target_link_libraries(ROSAgent ORCAStarLib TINYXML)
 
+
+file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false ./test/*.h
+                                                      ./test/*.cpp)
+
+rosbuild_add_executable(test/ORCAStarLibTest ${TEST_SOURCES})
+
+rosbuild_add_gtest_build_flags(test/ORCAStarLibTest)
+
+target_link_libraries(test/ORCAStarLibTest ORCAStarLib TINYXML)
+
+#add_subdirectory(tests)
 
 #common commands for building c++ executables and libraries
 #rosbuild_add_library(${PROJECT_NAME} src/example.cpp)

@@ -1,14 +1,17 @@
 #include "ROSMission.h"
 
 
-ROSMission::ROSMission(std::string fileName, size_t agNum)
+ROSMission::ROSMission(std::string fileName, size_t agNum, int threashold , bool endOnFin)
 {
-    ROS_INFO("Mission Init!");
+    ROS_DEBUG("Mission Init!");
     taskReader = new XMLReader(fileName);
     agNumber = agNum;
     agCount = 0;
     agents = std::vector<Agent*>();
 
+    stepsCount = 0;
+    stepsTreshhold = threashold;
+    endOnFinish = endOnFin;
 
     options = nullptr;
     missionResult = Summary();
@@ -38,22 +41,24 @@ ROSMission::~ROSMission()
 
 void ROSMission::StartSimulation()
 {
-    int step = 0;
-    ROS_INFO("Mission Start!");
-    while (ros::ok())
+
+    ROS_DEBUG("Mission Start!");
+
+    while (ros::ok() && !IsFinished())
     {
-        ROS_INFO("Mission step!");
+        ROS_DEBUG("Mission step!");
+
         UpdateState();
         GenerateAgentStateMsg();
         ROSMissionPub.publish(agentStateMsg);
 
         ros::spinOnce();
-        step++;
+        stepsCount++;
 
         loopRate->sleep();
 
     }
-
+    ROS_DEBUG("Mission End!");
 }
 
 
@@ -82,7 +87,7 @@ void ROSMission::GenerateAgentStateMsg()
 void ROSMission::UpdateVelocity(const ORCAStar::AgentVelocity &msg)
 {
   size_t id = msg.id;
-  ROS_INFO("Agent %lu Update Velocity", id);
+  ROS_DEBUG("Agent %lu Update Velocity", id);
   agents[id]->SetVelocity(Point(msg.vel.x, msg.vel.y));
 }
 
@@ -102,7 +107,7 @@ bool ROSMission::PrepareSimulation()
 
     if(!ReadTask()) return false;
 
-    ROS_INFO("Task File is OK!");
+    ROS_DEBUG("Task File is OK!");
 
     agentStateMsg.pos.resize(agNumber);
     agentStateMsg.vel.resize(agNumber);
@@ -115,7 +120,7 @@ bool ROSMission::PrepareSimulation()
         ros::spinOnce();
     }
 
-    ROS_INFO("Agents is OK!");
+    ROS_DEBUG("Agents is OK!");
     agCount = 0;
 
     return true;
@@ -163,7 +168,7 @@ bool ROSMission::InitAgent(ORCAStar::Init::Request  &req, ORCAStar::Init::Respon
         res.Obstacles.push_back(polygon);
     }
 
-    ROS_INFO("Sim Actor %lu\n", agCount);
+    ROS_DEBUG("Sim Actor %lu\n", agCount);
 
     agCount++;
     if(agCount == agNumber)
@@ -172,4 +177,29 @@ bool ROSMission::InitAgent(ORCAStar::Init::Request  &req, ORCAStar::Init::Respon
     }
 
     return true;
+}
+
+
+
+bool ROSMission::IsFinished()
+{
+    if(!endOnFinish)
+    {
+        return false;
+    }
+
+    if(stepsCount == stepsTreshhold)
+    {
+        return true;
+    }
+
+    bool result = true;
+    for(auto &agent : agents)
+    {
+        result = result && agent->isFinished();
+        if(!result)
+            break;
+    }
+
+    return result;
 }

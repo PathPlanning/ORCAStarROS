@@ -11,7 +11,7 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "ROSAgent", ros::init_options::AnonymousName);
     ros::NodeHandle n;
     int i;
-    ros::param::get("~param", i);
+    ros::param::get("~id", i);
 
 
    ROSAgent actor = ROSAgent(i);

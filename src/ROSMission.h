@@ -23,7 +23,7 @@ class ROSMission
 
     public:
 
-        ROSMission(std::string fileName, size_t agNum);
+        ROSMission(std::string fileName, size_t agNum, int threashold = -1, bool endOnFin = false);
         ~ROSMission();
 
         bool PrepareSimulation();
@@ -31,6 +31,7 @@ class ROSMission
         void GenerateAgentStateMsg();
         void UpdateVelocity(const ORCAStar::AgentVelocity &msg);
         void UpdateState();
+        bool IsFinished();
 
     private:
 
@@ -41,8 +42,6 @@ class ROSMission
         size_t agCount;
         unsigned int stepsCount;
         unsigned int stepsTreshhold;
-        //      unsigned int collisionsCount;
-        //      unsigned int collisionsObstCount;
 
 
         ORCAStar::AgentState agentStateMsg;
@@ -59,6 +58,7 @@ class ROSMission
         Summary missionResult;
         std::unordered_map<int, std::pair<bool, int>> resultsLog;
         bool initFlag;
+        bool endOnFinish;
 
 
 

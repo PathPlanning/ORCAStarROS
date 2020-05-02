@@ -1,18 +1,23 @@
 #include "ROSMission.h"
 
-// TODO step threshhold
-// TODO filepath param
-// TODO simulation results as file
-// TODO summary
+
 
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "ROSMission");
 
     int agNum;
-    ros::param::get("~agents_number", agNum);
+    std::string file;
+    int t = -1;
+    bool end = false;
 
-    ROSMission task = ROSMission("../examples/0_task.xml", agNum);
+    ros::param::get("~agents_number", agNum);
+    ros::param::get("~task", file);
+    ros::param::get("~threshhold", t);
+    ros::param::get("~end", end);
+
+
+    ROSMission task = ROSMission(file, agNum, t, end);
     if(!task.PrepareSimulation())
     {
         ROS_ERROR("File problem!");

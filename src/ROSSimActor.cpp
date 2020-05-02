@@ -5,9 +5,6 @@ ROSSimActor::ROSSimActor()
 {
     agNumber = 0;
     id = 0;
-//    positions = std::vector<Point>();
-//    velocities = std::vector<Point>();
-//    radius = std::vector<float> ();
     initFlag = false;
     sightRad = 0.0;
 
@@ -20,7 +17,7 @@ ROSSimActor::ROSSimActor()
     {
 
         client.shutdown();
-        ROS_INFO("Parameters received!");
+        ROS_DEBUG("Parameters received!");
         id = srv.response.id;
         sightRad = srv.response.sightRadius;
         initData = srv.response;
@@ -56,7 +53,7 @@ ROSSimActor::ROSSimActor()
     ROSSimActorToAgentPub = n.advertise<ORCAStar::ORCAInput>(inpTopicName.str(), 1000);
     ROSSimActorToAgentSub = n.subscribe(outTopicName.str(), 1000, &ROSSimActor::TransmitAgentVelocity, this);
 
-    ROS_INFO("ROS Sim Actor Init: %lu!", id);
+    ROS_DEBUG("ROS Actor Init: %lu!", id);
 
     ros::spin();
 }
@@ -69,7 +66,7 @@ ROSSimActor::~ROSSimActor(){}
 
 void ROSSimActor::ReceiveAgentStates(const ORCAStar::AgentState &msg)
 {
-    ROS_INFO("Agent %lu New Step", id);
+    ROS_DEBUG("Actor %lu start step", id);
     inputORCAMsg.pos = msg.pos[id];
     inputORCAMsg.vel = msg.vel[id];
 
@@ -91,12 +88,13 @@ void ROSSimActor::ReceiveAgentStates(const ORCAStar::AgentState &msg)
         }
     }
 
+
     ROSSimActorToAgentPub.publish(inputORCAMsg);
 }
 
 void ROSSimActor::TransmitAgentVelocity(const geometry_msgs::Point32 &msg)
 {
-    ROS_INFO("Agent %lu Update Velocity", id);
+    ROS_DEBUG("Actor %lu end step", id);
 
     agentVelocityMsg.id = id;
     agentVelocityMsg.vel = msg;
@@ -108,7 +106,7 @@ bool ROSSimActor::InitAgent(ORCAStar::Init::Request &req, ORCAStar::Init::Respon
 {
     res = initData;
 
-    ROS_INFO("Sim Agent %lu\n", id);
+    ROS_DEBUG("Sim Agent %lu\n Init", id);
 
     initFlag = true;
 
