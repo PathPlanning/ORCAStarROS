@@ -241,11 +241,13 @@ void ORCAAgent::ComputeNewVelocity()
 
     unsigned long minMaxNum = (param.agentsMaxNum < Neighbours.size()) ? param.agentsMaxNum : Neighbours.size();
 
+
     for(unsigned long i = 0; i < minMaxNum; i++)
     {
         auto Neighbour = Neighbours[i];
         curragent = dynamic_cast<ORCAAgent *>(Neighbour.second);
         auto circlecenter = curragent->position - this->position; //(P_b - P_a)
+
         auto relvelocity = this->currV - curragent->currV; //(V_a - V_b)
 
         float radiussum = fakeRadius + curragent->fakeRadius; //(R_a + R_b)

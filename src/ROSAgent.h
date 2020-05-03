@@ -13,7 +13,10 @@
 #ifndef ROSAGENT_H
 #define ROSAGENT_H
 
-
+/**
+* @brief The ScanNPlan class is a client of the vision and path plan servers.  The ScanNPLan class takes
+* these services, computes transforms and published commands to the robot.
+*/
 class ROSAgent
 {
 public:

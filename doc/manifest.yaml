@@ -1,0 +1,21 @@
+actions: []
+authors: Stepan Drgachev
+brief: ORCAStar
+bugtracker: ''
+depends:
+- geometry_msgs
+- std_msgs
+- roscpp
+- visualization_msgs
+description: "\n\n     ORCAStar\n\n  "
+license: BSD
+maintainers: ''
+msgs:
+- AgentVelocity
+- AgentState
+- ORCAInput
+package_type: package
+repo_url: ''
+srvs:
+- Init
+url: http://ros.org/wiki/ORCAStar

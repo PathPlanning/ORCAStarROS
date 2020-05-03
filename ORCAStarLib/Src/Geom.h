@@ -14,20 +14,14 @@ class Node
 {
     public:
         int     i, j;
-        double  F, g, H;
+        double  g, H, F;
         Node    *parent;
 
-        int     subgraph = -1;
-        int     depth;
-        int     conflictsCount;
-        static bool breakingties;
 
-        Node(int i = 0, int j = 0, Node *p = nullptr, double g = 0, double h = 0, int d = 0, int conf = 0)
-            : i(i), j(j), parent(p), g(g), H(h), F(g+h), depth(d), conflictsCount(conf){}
+        Node(int i = 0, int j = 0, Node *p = nullptr, double g = 0, double h = 0)
+            : i(i), j(j), g(g), H(h), F(g+h), parent(p){}
 
         bool operator != (const Node &other) const ;
-
-        bool operator < (const Node &other) const;
 
         bool operator == (const Node &another) const;
 };
@@ -111,13 +105,6 @@ class ObstacleSegment
 
 };
 
-struct ActorMove
-{
-    int     di, dj;
-    int     id;
-
-    ActorMove(int i, int j, int id) : di (i), dj(j), id(id) {}
-};
 
 namespace Utils
 {
@@ -144,29 +131,6 @@ namespace Utils
 };
 
 
-
-namespace std
-{
-    template<>
-    struct hash<Node>
-    {
-        size_t operator()(const Node& node) const
-        {
-            return (node.i + node.j) * (node.i + node.j + 1) + node.j;
-        }
-    };
-
-    template<>
-    struct hash<std::pair<Node, Node>>
-    {
-        size_t operator()(const std::pair<Node, Node>& pair) const
-        {
-            hash<Node> nodeHash;
-            size_t hash1 = nodeHash(pair.first), hash2 = nodeHash(pair.second);
-            return (hash1 + hash2) * (hash1 + hash2 + 1) + hash2;
-        }
-    };
-}
 
 
 
