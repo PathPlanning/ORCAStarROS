@@ -15,13 +15,18 @@ The principle is based on the concept of velocity obstacles, which are used to s
 
 The agent is a disk of radius _r_ with buffer radius _ε_ centered at _p_ with their start and global goal positions. 
 
-<img src="./images/reps.png" align="middle" alt="Agent sheme" width="500"/>
+
+<p align="center">
+  <img width="500" src="./images/reps.png" alt="Agent sheme" >
+</p>
 
 For each neighboring agent (located at a distance _R_ or less), their position and current speed are known. At the beginning of task execution every agent tries to find a path to their global goal, using Theta* algorithm. After getting of global path (which is a sequence of points in space, where the first point is the global goal), agent begin moving. First target point is the last element in path sequence. At each simulation step, for each agent, a new velocity _Vnew_ are searched, using ORCA algorithm. After that global simulation time is changed to _dt_, the position of all agents is changed to _dt_ * _Vnew_ (own for each agent) and every agent compute new target point. If the agent has reached the last point in the sequence, then the next point in the sequence becomes the target, and the previous one is deleted. Otherwise, a visibility check is made between the agent’s position and the last point. If visibility is confirmed, then the last becomes the target point, otherwise the path from the agent's position to the last point is searched.
 
 Block scheme of the algorithm is shown in the figures below.
 
-<img src="./images/scheme.png" align="middle" alt="Algorithm block sheme" width="1000"/>
+<p align="center">
+  <img width="1000" src="./images/scheme.png" alt="Algorithm block sheme" >
+</p>
 
 
 The implementation of ORCA* algorithm based on **[LINK]**. Implementation relies only on C++11 standard and STL. Open-source library to work with XML (tinyXML) is included at the source level (i.e. .h and .cpp files are part of the project).
@@ -120,7 +125,9 @@ Input file should contain:
   *  `<allowsqueeze>` — boolean tag that defines the possibility to make diagonal moves when both adjacent cells are untraversable. The tag is ignored if cutting corners is not allowed. Default value is "false" (Theta* parameter);
   *  `<hweight` — defines the weight of the heuristic function. Should be real number greater or equal 1. Default value is "1" (Theta* parameter);
 
-<img src="./images/map.png" align="middle" alt="Map scheme" width="1000"/>
+<p align="center">
+  <img width="1000" src="./images/map.png" alt="Map sheme" >
+</p>
 
 #### Visualisation
 
