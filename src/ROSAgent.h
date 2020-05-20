@@ -38,14 +38,14 @@
 * At the first stage, node is initialized, the algorithms parameters and static environment data are requested from ROS
 * services, global path is created. 
 * The node sends a request to service `initAgentServer_*id*` 
-* (Service description: **[LINK]**, `id` is identifier of agent, 
+* (Service description: [here](https://haiot4105.github.io/ORCAStarROS/srv/Init.html), `id` is identifier of agent, 
 * which sets as ROS private parameter) and awaits a response. 
 * For using ROS Agent node you should launch such service. 
 * After that, the node sends a request to the service `static_map` of `map_server` node. 
 * You should launch this node before launching ROS Agent node. 
 * At the second stage the process of following the global path starts. 
 * The node waits for messages in topic `AgentInput_*id*`. 
-* After a message with input data (**[LINK]**) appears in the 
+* After a message with input data ([here](https://haiot4105.github.io/ORCAStarROS/msg/ORCAInput.html)) appears in the 
 * topic `AgentInput_*id*`, new velocity computation procedure starts. 
 * New velocity publishes in the topic `AgentOutput*id*` (in [geometry_msgs::Point32](http://docs.ros.org/api/geometry_msgs/html/msg/Point32.html) format).
 * The second stage continues until the node is working. An illustration of the operation of the node is presented in the figure below.
