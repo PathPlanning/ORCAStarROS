@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classReader.html" title="Reader class implements base interface for input data reading. " alt="" coords="5,5,69,32"/>
+<area shape="rect" id="node2" href="$classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML&#45;file with a specific structu..." alt="" coords="117,5,208,32"/>
+</map>
