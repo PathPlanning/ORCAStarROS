@@ -7,7 +7,7 @@
   <author>Stepan Drgachev</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/ORCAStar</url>
+  <url>https://github.com/haiot4105/ORCAStarROS</url>
   <depend package="std_msgs"/>
   <depend package="geometry_msgs"/>
   <depend package="visualization_msgs"/>

@@ -18,4 +18,4 @@ package_type: package
 repo_url: ''
 srvs:
 - Init
-url: http://ros.org/wiki/ORCAStar
+url: https://github.com/haiot4105/ORCAStarROS

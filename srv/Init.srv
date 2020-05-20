@@ -1,3 +1,9 @@
+# This service contains initial input data, such as:
+# - agent's identifier (optional); 
+# - start and goal positions;
+# - algorthm options (see EnvironmentOptions and AgentParam classes);
+# - static obstacles in for of polygons. 
+
 ---
 int64 id
 geometry_msgs/Point32 start
