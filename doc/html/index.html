@@ -36,7 +36,7 @@
 <div class="image">
 <img src="./images/scheme.png"  width="1000" alt="Algorithm block sheme"/>
 </div>
- <p>The implementation of ORCA* algorithm located in <code>./ORCAStarLib/</code> subdirectory. It based on [<a href="https://github.com/PathPlanning/ORCA-algorithm">4</a>]. Implementation relies only on C++11 standard and STL. I/O modules use open-source library tinyXML to work with XML. It is included at the source level (i.e. .h and .cpp files are part of the project) in <code>./ORCAStarLib/tinyxml/</code> subdirectory. Full documentation for ORCA* implementation source code located <b>[HERE]</b>.</p>
+ <p>The implementation of ORCA* algorithm located in <code>./ORCAStarLib/</code> subdirectory. It based on [<a href="https://github.com/PathPlanning/ORCA-algorithm">4</a>]. Implementation relies only on C++11 standard and STL. I/O modules use open-source library tinyXML to work with XML. It is included at the source level (i.e. .h and .cpp files are part of the project) in <code>./ORCAStarLib/tinyxml/</code> subdirectory. Full documentation for ORCA* implementation source code located <a href="https://haiot4105.github.io/ORCAStarROS/group__ORCAStarLib.html">here</a>.</p>
 <h2>ROS Imlemetation</h2>
 <h3>Requirements</h3>
 <p>To build and run ORCA* ROS you nedd the following software:</p><ul>
@@ -60,8 +60,8 @@
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;make test</div></div><!-- fragment --><p>To run tests run commands:</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cd bin/test</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;./ORCAStarTest </div></div><!-- fragment --><h3>Single <a class="el" href="classAgent.html" title="Agent class implements base agent interface and behavior. ">Agent</a></h3>
 <p>The main part in a navigation system is the single agent navigation module. This component can be used both for embedding a separate robot and for centralized calculation of trajectories, but using distributed computing. The single agent navigation implemented as a ROS node. The node operation is divided into 2 stages.</p>
-<p>At the first stage, node is initialized, the algorithms parameters and static environment data are requested from ROS services, global path is created. The node sends a request to service <code>initAgentServer_*id*</code> (Service description: <b>[LINK]</b>, <code>id</code> is identifier of agent, which sets as ROS private parameter) and awaits a response. For using ROS <a class="el" href="classAgent.html" title="Agent class implements base agent interface and behavior. ">Agent</a> node you should launch such service. After that, the node sends a request to the service <code>static_map</code> of <code>map_server</code> node. You should launch this node before launching ROS <a class="el" href="classAgent.html" title="Agent class implements base agent interface and behavior. ">Agent</a> node.</p>
-<p>At the second stage the process of following the global path starts. The node waits for messages in topic <code>AgentInput_*id*</code>. After a message with input data (<b>[LINK]</b>) appears in the topic <code>AgentInput_*id*</code>, new velocity computation procedure starts. New velocity publishes in the topic <code>AgentOutput_*id*</code> (in <a href="http://docs.ros.org/api/geometry_msgs/html/msg/Point32.html">geometry_msgs::Point32</a> format). The second stage continues until the node is working. An illustration of the operation of the node is presented in the figure below.</p>
+<p>At the first stage, node is initialized, the algorithms parameters and static environment data are requested from ROS services, global path is created. The node sends a request to service <code>initAgentServer_*id*</code>(Service description: <a href="https://haiot4105.github.io/ORCAStarROS/srv/Init.html">here</a>, <code>id</code> is identifier of agent, which sets as ROS private parameter) and awaits a response. For using ROS <a class="el" href="classAgent.html" title="Agent class implements base agent interface and behavior. ">Agent</a> node you should launch such service. After that, the node sends a request to the service <code>static_map</code> of <code>map_server</code> node. You should launch this node before launching ROS <a class="el" href="classAgent.html" title="Agent class implements base agent interface and behavior. ">Agent</a> node.</p>
+<p>At the second stage the process of following the global path starts. The node waits for messages in topic <code>AgentInput_*id*</code>. After a message with input data (<a href="https://haiot4105.github.io/ORCAStarROS/msg/ORCAInput.html">msg description</a>) appears in the topic <code>AgentInput_*id*</code>, new velocity computation procedure starts. New velocity publishes in the topic <code>AgentOutput_*id*</code> (in <a href="http://docs.ros.org/api/geometry_msgs/html/msg/Point32.html">geometry_msgs::Point32</a> format). The second stage continues until the node is working. An illustration of the operation of the node is presented in the figure below.</p>
 <div class="image">
 <img src="./images/ROSAgent.png"  width="300" alt="Map sheme"/>
 </div>
@@ -69,9 +69,9 @@
 <p>To launch single agent ROS node <code>rosrun</code> util can be used. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;rosrun ORCAStar ROSAgent _id:=0</div></div><!-- fragment --><p> Roslaunch files also can be used. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;<span class="keywordtype">node</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(anon ROSAgent_0)&quot;</span> <span class="keyword">pkg</span>=<span class="stringliteral">&quot;ORCAStar&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;ROSAgent&quot;</span>&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;id&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;int&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;/<span class="keywordtype">node</span>&gt;</div></div><!-- fragment --><p> If you are launching a single instance of the node, then use parameter <code>id</code> equal to any integer (0 for example). When running multiple instances, use unique values.</p>
 <h4>I/O Format</h4>
 <p>As input and output uses following ROS services and topics:</p><ul>
-<li><code>initAgentServer_id</code> — initial input data service, which uses [Init service format](). Initial input data contains algorithms parameters, agent parameters, start and goal positions and static obstacles description in form of polygons.</li>
+<li><code>initAgentServer_id</code> — initial input data service, which uses <a href="https://haiot4105.github.io/ORCAStarROS/srv/Init.html">Init service format</a>. Initial input data contains algorithms parameters, agent parameters, start and goal positions and static obstacles description in form of polygons.</li>
 <li><code>static_map</code> — service of <code>map_server</code> [<a href="http://wiki.ros.org/map_server">6</a>] node, which stores information about static environment in form of grid.</li>
-<li><code>AgentInput_*id*</code> — ROS topic for providing input data on each step of following the global path. It uses [ORCAInput message format](), which includes current position and velocity of agent and states of other agents.</li>
+<li><code>AgentInput_*id*</code> — ROS topic for providing input data on each step of following the global path. It uses <a href="https://haiot4105.github.io/ORCAStarROS/msg/ORCAInput.html">ORCAInput message format</a>, which includes current position and velocity of agent and states of other agents.</li>
 <li><code>AgentOutput_*id*</code> — ROS topic for receiving result velocity from ORCAStar algorithm. It uses <a href="http://docs.ros.org/api/geometry_msgs/html/msg/Point32.html">geometry_msgs::Point32</a> message format.</li>
 </ul>
 <h4><a class="el" href="classMap.html" title="Map class describes static environment. ">Map</a> Format</h4>
@@ -166,7 +166,7 @@
 </ul>
 </li>
 </ul>
-<p>Output of simulation is made to topic <code>AgentStates</code> using message format [AgentState](). It includes positions, velocities and sizes of all agent on current step.</p>
+<p>Output of simulation is made to topic <code>AgentStates</code> using message format <a href="https://haiot4105.github.io/ORCAStarROS/msg/AgentState.html">AgentState</a>. It includes positions, velocities and sizes of all agent on current step.</p>
 <h4>Visualisation</h4>
 <p>The simulation visualized using <code>rviz</code>. To use visualization add floowing nodes to the launch file. Examples of rviz config files are presented in <code>./examples/</code> subdirectory.</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;<span class="keywordtype">node</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;rviz&quot;</span> <span class="keyword">pkg</span>=<span class="stringliteral">&quot;rviz&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;rviz&quot;</span>/&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;<span class="keywordtype">node</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROSVisualization&quot;</span> <span class="keyword">pkg</span>=<span class="stringliteral">&quot;ORCAStar&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;ROSVisualization&quot;</span>/&gt;</div></div><!-- fragment --><p>Example of visualized simulation is presented below.</p>
@@ -174,8 +174,8 @@
 <img src="./images/vis.gif"  width="700" alt="vis"/>
 </div>
  <h2>Source Code Documentation</h2>
-<p>Full source code documentation is presented [here]().</p>
-<p>Documentation for ROS messages and services is presented [here]()</p>
+<p>Full source code documentation is presented <a href="https://haiot4105.github.io/ORCAStarROS/">here</a>.</p>
+<p>Documentation for ROS messages and services is presented <a href="https://haiot4105.github.io/ORCAStarROS/index-msg.html">here</a></p>
 <h2>Links</h2>
 <ol type="1">
 <li><a href="https://arxiv.org/pdf/1401.3843.pdf">Daniel K. et al. Theta*: Any-angle path planning on grids // Journal of Artificial Intelligence Research. – 2010. – vol. 39. – p. 533-579.</a></li>
@@ -191,7 +191,7 @@
 <hr size="1"><div style="align: right;">
 <a href="http://wiki.ros.org/ORCAStar">ORCAStar</a><br />
 Author(s): Stepan Drgachev</br />
-<small>autogenerated on Wed May 20 2020 18:14:17</small>
+<small>autogenerated on Wed May 20 2020 18:49:54</small>
 </div>
 </body>
 </html>
