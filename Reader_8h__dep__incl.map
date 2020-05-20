@@ -1,7 +1,0 @@
-<map id="Reader.h" name="Reader.h">
-<area shape="rect" id="node2" href="$XMLReader_8h.html" title="File contains XMLReader class. " alt="" coords="80,80,183,107"/>
-<area shape="rect" id="node3" href="$XMLReader_8cpp.html" title="File contains XMLReader class implementation. " alt="" coords="5,155,121,181"/>
-<area shape="rect" id="node4" href="$ROSMission_8h.html" title="File contains ROSMission class. " alt="" coords="146,155,253,181"/>
-<area shape="rect" id="node5" href="$ROSMission_8cpp.html" title="File contains ROSMission class implementation. " alt="" coords="67,229,188,256"/>
-<area shape="rect" id="node6" href="$StartMission_8cpp.html" title="File contains program for multiagent simulation launching. " alt="" coords="213,229,333,256"/>
-</map>

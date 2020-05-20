@@ -1,8 +1,0 @@
-<map id="Summary.h" name="Summary.h">
-<area shape="rect" id="node2" href="$Logger_8h.html" title="File contains Logger class. " alt="" coords="37,80,109,107"/>
-<area shape="rect" id="node5" href="$ROSMission_8h.html" title="File contains ROSMission class. " alt="" coords="143,80,250,107"/>
-<area shape="rect" id="node3" href="$XMLLogger_8h.html" title="File contains XMLLogger class. " alt="" coords="13,155,111,181"/>
-<area shape="rect" id="node4" href="$XMLLogger_8cpp.html" title="File contains XMLLogger class implementation. " alt="" coords="5,229,119,256"/>
-<area shape="rect" id="node6" href="$ROSMission_8cpp.html" title="File contains ROSMission class implementation. " alt="" coords="136,155,257,181"/>
-<area shape="rect" id="node7" href="$StartMission_8cpp.html" title="File contains program for multiagent simulation launching. " alt="" coords="282,155,402,181"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="DirectPlanner.h" name="DirectPlanner.h">
-<area shape="rect" id="node2" href="$DirectPlanner_8cpp.html" title="File contains DirectPlanner class implementation. " alt="" coords="5,80,132,107"/>
-<area shape="rect" id="node3" href="$XMLReader_8h.html" title="File contains XMLReader class. " alt="" coords="156,80,259,107"/>
-<area shape="rect" id="node4" href="$XMLReader_8cpp.html" title="File contains XMLReader class implementation. " alt="" coords="81,155,197,181"/>
-<area shape="rect" id="node5" href="$ROSMission_8h.html" title="File contains ROSMission class. " alt="" coords="222,155,329,181"/>
-<area shape="rect" id="node6" href="$ROSMission_8cpp.html" title="File contains ROSMission class implementation. " alt="" coords="143,229,264,256"/>
-<area shape="rect" id="node7" href="$StartMission_8cpp.html" title="File contains program for multiagent simulation launching. " alt="" coords="289,229,409,256"/>
-</map>

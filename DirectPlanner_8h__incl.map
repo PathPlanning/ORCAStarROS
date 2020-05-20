@@ -1,7 +1,0 @@
-<map id="DirectPlanner.h" name="DirectPlanner.h">
-<area shape="rect" id="node2" href="$PathPlanner_8h.html" title="File contains PathPlanner class. " alt="" coords="143,80,247,107"/>
-<area shape="rect" id="node9" href="$Geom_8h.html" title="File contains Node, Point, Line, Vertex, ObstacleSegment classes and some methods and functions imple..." alt="" coords="189,229,257,256"/>
-<area shape="rect" id="node4" href="$EnvironmentOptions_8h.html" title="File contains EnvironmentOptions class. " alt="" coords="343,229,493,256"/>
-<area shape="rect" id="node6" href="$Map_8h.html" title="File contains Map class. " alt="" coords="85,155,143,181"/>
-<area shape="rect" id="node5" href="$Const_8h.html" title="File contains main constants. " alt="" coords="415,304,483,331"/>
-</map>

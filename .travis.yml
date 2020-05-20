@@ -1,0 +1,18 @@
+# This will run on Travis' 'new' container-based infrastructure
+language: generic
+sudo: false 
+
+# Blacklist
+branches:
+  only:
+    - master
+
+
+# Generate and deploy documentation
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: doc/html
+  github_token: $GH_REPO_TOKEN
+  on:
+    branch: master
