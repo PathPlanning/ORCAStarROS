@@ -67,7 +67,7 @@ export ROS_PACKAGE_PATH=*installation path*:$ROS_PACKAGE_PATH
 Go to the directory with ORCAStar using teminal.
 
 ```bash
-roscd ORCAStar
+roscd ORCAStarROS
 ```
 
 Start building process using rosmake

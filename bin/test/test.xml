@@ -1,13 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <root>
-    <agents number="50">
+    <agents number="2">
         <default_parameters size="0.3" movespeed="1" agentsmaxnum="10" timeboundary="5.4" sightradius="3.0" timeboundaryobst="33"/>
         <agent  id="0" start.xr="0.5" start.yr="0.5" goal.xr="3.5" goal.yr="0.5"/>
         <agent  id="1" start.xr="3.5" start.yr="3.5" goal.xr="0.5" goal.yr="3.5"/>
     </agents>
 
-    <obstacles number="0">
-
+    <obstacles number="1">
+        <obstacle>
+            <vertex xr="0" yr="0"/>
+            <vertex xr="4" yr="0"/>
+            <vertex xr="4" yr="4"/>
+            <vertex xr="0" yr="4"/>
+        </obstacle>
     </obstacles>
 
     <map>
@@ -16,8 +21,8 @@
         <cellsize>1</cellsize>
         <grid>
             <row>0 0 0 0 </row>
-            <row>0 0 0 0 </row>
-            <row>0 0 0 0 </row>
+            <row>0 1 0 0 </row>
+            <row>0 0 1 0 </row>
             <row>0 0 0 0 </row>
         </grid>
     </map>
