@@ -1,3 +1,8 @@
+/*!
+\file
+\brief File contains program for single simulation actor launching.
+*/
+
 #include "ROSSimActor.h"
 
 int main(int argc, char **argv)

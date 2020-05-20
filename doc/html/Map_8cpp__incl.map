@@ -1,5 +1,5 @@
 <map id="Map.cpp" name="Map.cpp">
-<area shape="rect" id="node2" href="$Map_8h.html" title="Map.h" alt="" coords="85,80,143,107"/>
-<area shape="rect" id="node5" href="$Geom_8h.html" title="Geom.h" alt="" coords="159,155,227,181"/>
-<area shape="rect" id="node9" href="$Const_8h.html" title="Const.h" alt="" coords="243,229,311,256"/>
+<area shape="rect" id="node2" href="$Map_8h.html" title="File contains Map class. " alt="" coords="85,80,143,107"/>
+<area shape="rect" id="node5" href="$Geom_8h.html" title="File contains Node, Point, Line, Vertex, ObstacleSegment classes and some methods and functions imple..." alt="" coords="159,155,227,181"/>
+<area shape="rect" id="node9" href="$Const_8h.html" title="File contains main constants. " alt="" coords="243,229,311,256"/>
 </map>

@@ -9,6 +9,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -25,13 +26,14 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classXMLReader-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">XMLReader Class Reference</div>  </div>
+<div class="title">XMLReader Class Reference<div class="ingroups"><a class="el" href="group__ORCAStarLib.html">ORCAStar Library</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML-file with a specific structu...">XMLReader</a> class implements interface for input data reading from XML-file with a specific structure.  
+ <a href="classXMLReader.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -39,69 +41,106 @@ Inheritance diagram for XMLReader:</div>
 <div class="dyncontent">
 <div class="center"><img src="classXMLReader__inherit__graph.png" border="0" usemap="#XMLReader_inherit__map" alt="Inheritance graph"/></div>
 <map name="XMLReader_inherit__map" id="XMLReader_inherit__map">
-<area shape="rect" id="node2" href="classReader.html" title="Reader" alt="" coords="19,5,83,32"/>
+<area shape="rect" id="node2" href="classReader.html" title="Reader class implements base interface for input data reading. " alt="" coords="19,5,83,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a914c0648e81ef0b70336b550d5833800"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXMLReader.html">XMLReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a914c0648e81ef0b70336b550d5833800">Clone</a> () const override</td></tr>
+<tr class="memdesc:a914c0648e81ef0b70336b550d5833800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for cloning objects. Create copy of object in memmory and return pointer to copy.  <a href="#a914c0648e81ef0b70336b550d5833800">More...</a><br /></td></tr>
 <tr class="separator:a914c0648e81ef0b70336b550d5833800"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54da1883de19a33b66324697acaa931b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a54da1883de19a33b66324697acaa931b">GetAgents</a> (std::vector&lt; <a class="el" href="classAgent.html">Agent</a> * &gt; &amp;agents, const int &amp;numThreshold) override</td></tr>
+<tr class="memdesc:a54da1883de19a33b66324697acaa931b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates object for all agents.  <a href="#a54da1883de19a33b66324697acaa931b">More...</a><br /></td></tr>
 <tr class="separator:a54da1883de19a33b66324697acaa931b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b2c52613ec15dfdedcd74e1a544f630"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a8b2c52613ec15dfdedcd74e1a544f630">GetEnvironmentOptions</a> (<a class="el" href="classEnvironmentOptions.html">EnvironmentOptions</a> **envOpt) override</td></tr>
+<tr class="memdesc:a8b2c52613ec15dfdedcd74e1a544f630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates object with algorithms and environment parameters.  <a href="#a8b2c52613ec15dfdedcd74e1a544f630">More...</a><br /></td></tr>
 <tr class="separator:a8b2c52613ec15dfdedcd74e1a544f630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaa4cd738f17dafb9f06b361129a46ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#abaa4cd738f17dafb9f06b361129a46ae">GetMap</a> (<a class="el" href="classMap.html">Map</a> **<a class="el" href="classXMLReader.html#aba94a9f4c7c974fe4eb72a12089dbb29">map</a>) override</td></tr>
+<tr class="memitem:abaa4cd738f17dafb9f06b361129a46ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#abaa4cd738f17dafb9f06b361129a46ae">GetMap</a> (<a class="el" href="classMap.html">Map</a> **map) override</td></tr>
+<tr class="memdesc:abaa4cd738f17dafb9f06b361129a46ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates object with static environment data.  <a href="#abaa4cd738f17dafb9f06b361129a46ae">More...</a><br /></td></tr>
 <tr class="separator:abaa4cd738f17dafb9f06b361129a46ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a669f56de0fccd7e3bacc0811b716db4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXMLReader.html">XMLReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a669f56de0fccd7e3bacc0811b716db4d">operator=</a> (const <a class="el" href="classXMLReader.html">XMLReader</a> &amp;obj)</td></tr>
+<tr class="memdesc:a669f56de0fccd7e3bacc0811b716db4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator.  <a href="#a669f56de0fccd7e3bacc0811b716db4d">More...</a><br /></td></tr>
 <tr class="separator:a669f56de0fccd7e3bacc0811b716db4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cc6bf316e61dbd945f2a97a8df61b9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a9cc6bf316e61dbd945f2a97a8df61b9c">ReadData</a> () override</td></tr>
+<tr class="memdesc:a9cc6bf316e61dbd945f2a97a8df61b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts input data reading from XML-file.  <a href="#a9cc6bf316e61dbd945f2a97a8df61b9c">More...</a><br /></td></tr>
 <tr class="separator:a9cc6bf316e61dbd945f2a97a8df61b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f618ae88210ab36b17b6191664d0fa6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a6f618ae88210ab36b17b6191664d0fa6">XMLReader</a> ()</td></tr>
+<tr class="memdesc:a6f618ae88210ab36b17b6191664d0fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML-file with a specific structu...">XMLReader</a> default constructor.  <a href="#a6f618ae88210ab36b17b6191664d0fa6">More...</a><br /></td></tr>
 <tr class="separator:a6f618ae88210ab36b17b6191664d0fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a025bdef3367a39f4eacfed502cac1b73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a025bdef3367a39f4eacfed502cac1b73">XMLReader</a> (const std::string &amp;<a class="el" href="classXMLReader.html#ac1cc95efa92fd138b484ce8e1f51d4c2">fileName</a>)</td></tr>
+<tr class="memitem:a025bdef3367a39f4eacfed502cac1b73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a025bdef3367a39f4eacfed502cac1b73">XMLReader</a> (const std::string &amp;fileName)</td></tr>
+<tr class="memdesc:a025bdef3367a39f4eacfed502cac1b73"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML-file with a specific structu...">XMLReader</a> constructor.  <a href="#a025bdef3367a39f4eacfed502cac1b73">More...</a><br /></td></tr>
 <tr class="separator:a025bdef3367a39f4eacfed502cac1b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53eb66e6deb289ad74197721dc03bc12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a53eb66e6deb289ad74197721dc03bc12">XMLReader</a> (const <a class="el" href="classXMLReader.html">XMLReader</a> &amp;obj)</td></tr>
+<tr class="memdesc:a53eb66e6deb289ad74197721dc03bc12"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML-file with a specific structu...">XMLReader</a> copy constructor.  <a href="#a53eb66e6deb289ad74197721dc03bc12">More...</a><br /></td></tr>
 <tr class="separator:a53eb66e6deb289ad74197721dc03bc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b8537b66612bfae24db13456796b36d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a0b8537b66612bfae24db13456796b36d">~XMLReader</a> () override</td></tr>
+<tr class="memdesc:a0b8537b66612bfae24db13456796b36d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML-file with a specific structu...">XMLReader</a> destructor.  <a href="#a0b8537b66612bfae24db13456796b36d">More...</a><br /></td></tr>
 <tr class="separator:a0b8537b66612bfae24db13456796b36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classReader"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classReader')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classReader.html">Reader</a></td></tr>
 <tr class="memitem:a357153a7085f8b606de954a80411e27a inherit pub_methods_classReader"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReader.html#a357153a7085f8b606de954a80411e27a">~Reader</a> ()</td></tr>
+<tr class="memdesc:a357153a7085f8b606de954a80411e27a inherit pub_methods_classReader"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classReader.html" title="Reader class implements base interface for input data reading. ">Reader</a> virtual destructor.  <a href="#a357153a7085f8b606de954a80411e27a">More...</a><br /></td></tr>
 <tr class="separator:a357153a7085f8b606de954a80411e27a inherit pub_methods_classReader"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aab3ee8ad9d2506b15695a371abdb2f89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#aab3ee8ad9d2506b15695a371abdb2f89">ReadAgents</a> ()</td></tr>
-<tr class="separator:aab3ee8ad9d2506b15695a371abdb2f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c1e0b1308fe4c7b52dd31d15d819b81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a2c1e0b1308fe4c7b52dd31d15d819b81">ReadAlgorithmOptions</a> ()</td></tr>
-<tr class="separator:a2c1e0b1308fe4c7b52dd31d15d819b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b4dec1de601518388a63f1259150894"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a3b4dec1de601518388a63f1259150894">ReadMap</a> ()</td></tr>
-<tr class="separator:a3b4dec1de601518388a63f1259150894"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a48c0cf36328783c6ee76bd098afa551e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classAgent.html">Agent</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a48c0cf36328783c6ee76bd098afa551e">allAgents</a></td></tr>
-<tr class="separator:a48c0cf36328783c6ee76bd098afa551e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca0082b815d103ef876e92f9073e9be"><td class="memItemLeft" align="right" valign="top">XMLDocument *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a0ca0082b815d103ef876e92f9073e9be">doc</a></td></tr>
-<tr class="separator:a0ca0082b815d103ef876e92f9073e9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1cc95efa92fd138b484ce8e1f51d4c2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#ac1cc95efa92fd138b484ce8e1f51d4c2">fileName</a></td></tr>
-<tr class="separator:ac1cc95efa92fd138b484ce8e1f51d4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51fe56cca8bae35f6b6749bf058679b4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a51fe56cca8bae35f6b6749bf058679b4">grid</a></td></tr>
-<tr class="separator:a51fe56cca8bae35f6b6749bf058679b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba94a9f4c7c974fe4eb72a12089dbb29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMap.html">Map</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#aba94a9f4c7c974fe4eb72a12089dbb29">map</a></td></tr>
-<tr class="separator:aba94a9f4c7c974fe4eb72a12089dbb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82d713f0a389ebc58cf80d4507dbd193"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="classPoint.html">Point</a> &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a82d713f0a389ebc58cf80d4507dbd193">obstacles</a></td></tr>
-<tr class="separator:a82d713f0a389ebc58cf80d4507dbd193"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a821072a4ae9a1b04ea7877a863af97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classEnvironmentOptions.html">EnvironmentOptions</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a4a821072a4ae9a1b04ea7877a863af97">options</a></td></tr>
-<tr class="separator:a4a821072a4ae9a1b04ea7877a863af97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a7b0d866586d71b9f84693167c9f4d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#ae0a7b0d866586d71b9f84693167c9f4d">plannertype</a></td></tr>
-<tr class="separator:ae0a7b0d866586d71b9f84693167c9f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315245ff083b357982764c0cf9960e36"><td class="memItemLeft" align="right" valign="top">XMLElement *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXMLReader.html#a315245ff083b357982764c0cf9960e36">root</a></td></tr>
-<tr class="separator:a315245ff083b357982764c0cf9960e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="XMLReader_8h_source.html#l00021">21</a> of file <a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>.</p>
+<div class="textblock"><p>The <a class="el" href="classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML-file with a specific structu...">XMLReader</a> class implements interface for input data reading from XML-file with a specific structure. </p>
+<p>Input file should contain:</p><ul>
+<li>Mandatory tag <code>&lt;agents&gt;</code>. It describes the parameters of the agents.<ul>
+<li><code>number</code> — mandatory attribute that define the number of agents;</li>
+<li><code>&lt;default_parameters&gt;</code> — mandatory tags that defines default parameters of agents and agent's perception.<ul>
+<li><code>agentsmaxnum</code> — mandatory attribute that defines a number of neighbors, that the agent takes into account;</li>
+<li><code>movespeed</code> — mandatory attribute that defines maximum speed of agent;</li>
+<li><code>sightradius</code> — mandatory attribute that defines the radius in which the agent takes neighbors into account;</li>
+<li><code>size</code> — mandatory attribute that defines size of the agent (radius of the agent);</li>
+<li><code>timeboundary</code> — mandatory attribute that defines the time within which the algorithm ensures collision avoidance with other agents;</li>
+<li><code>timeboundaryobst</code> — mandatory attribute that defines the time within which the algorithm ensures collision avoidance with static obstacles.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>&lt;agent&gt;</code> — mandatory tags that defines parameters of each agent.<ul>
+<li><code>id</code> — mandatory attribute that defines the identifier of agent;</li>
+<li><code>start.xr</code> — mandatory attribute that defines the coordinate of start position on the x-axis (hereinafter, excluding <code>map</code> tag, points (x,y) are in coordinate system, which has an origin (0,0) in lower left corner. More about coordinate systems in the illustration below);</li>
+<li><code>start.yr</code> — mandatory attribute that defines the coordinate of start position on the y-axis;</li>
+<li><code>goal.xr</code> — mandatory attribute that defines the coordinate of finish position on the x-axis;</li>
+<li><code>goal.yr</code> — mandatory attribute that defines the coordinate of finish position on the y-axis;</li>
+<li><code>agentsmaxnum</code> — attribute that defines a number of neighbors, that the agent takes into account;</li>
+<li><code>movespeed</code> — attribute that defines maximum speed of agent;</li>
+<li><code>sightradius</code> — attribute that defines the radius in which the agent takes neighbors into account;</li>
+<li><code>size</code> — attribute that defines size of the agent (radius of the agent);</li>
+<li><code>timeboundary</code> — attribute that defines the time within which the algorithm ensures collision avoidance with other agents;</li>
+<li><code>timeboundaryobst</code> — attribute that define the time within which the algorithm ensures collision avoidance with static obstacles.</li>
+</ul>
+</li>
+<li>Mandatory tag <code>&lt;map&gt;</code>. It describes the environment for global path planning.<ul>
+<li><code>&lt;height&gt;</code> and <code>&lt;width&gt;</code> — mandatory tags that define size of the map. Origin is in the upper left corner. (0,0) - is upper left, ( * * width * * -1, * * height * * -1) is lower right (more about coordinate systems in the illustration below).</li>
+<li><code>&lt;cellsize&gt;</code> — optional tag that defines the size of one cell.</li>
+<li><code>&lt;grid&gt;</code> — mandatory tag that describes the square grid constituting the map. It consists of <code>&lt;row&gt;</code> tags. Each <code>&lt;row&gt;</code> contains a sequence of "0" and "1" separated by blanks. "0" stands for traversable cell, "1" — for untraversable (actually any other figure but "0" can be used instead of "1").</li>
+</ul>
+</li>
+<li>Mandatory tag <code>&lt;obstacles&gt;</code>. It describes static obstacles for collision avoidance.<ul>
+<li><code>number</code> — mandatory attribute that defines the number of obstacles;</li>
+<li><code>&lt;obstacle&gt;</code> — mandatory tags which defines each static obstacles for collision avoidance.</li>
+<li><code>&lt;vertex&gt;</code> — mandatory tags which defines vertex of static obstacle for collision avoidance.<ul>
+<li><code>xr</code> — mandatory attribute that defines the coordinate of vertex on the x-axis;</li>
+<li><code>yr</code> — mandatory attribute that defines the coordinate of vertex on the y-axis.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Mandatory tag <code>&lt;algorithm&gt;</code>. It describes the parameters of the algorithm.<ul>
+<li><code>&lt;delta&gt;</code> — mandatory tag that defines the distance between the center of the agent and the finish, which is enough to reach the finish (ORCA parameter);</li>
+<li><code>&lt;timestep&gt;</code> — mandatory tag that defines the time step of simulation (ORCA parameter);</li>
+<li><code>&lt;searchtype&gt;</code> — tag that defines the type of planning. Possible values - "thetastar" (use Theta* for planning), "direct" (turn off global planning and always use direction to global goal). Default value is "thetastar" (global planning parameter);</li>
+<li><code>&lt;breakingties&gt;</code> — tag that defines the priority in OPEN list for nodes with equal f-values. Possible values - "0" (break ties in favor of the node with smaller g-value), "1" (break ties in favor of the node with greater g-value). Default value is "0" (Theta * * parameter);</li>
+<li><code>&lt;cutcorners&gt;</code> — boolean tag that defines the possibilty to make diagonal moves when one adjacent cell is untraversable. The tag is ignored if diagonal moves are not allowed. Default value is "false" (Theta * * parameter);</li>
+<li><code>&lt;allowsqueeze&gt;</code> — boolean tag that defines the possibility to make diagonal moves when both adjacent cells are untraversable. The tag is ignored if cutting corners is not allowed. Default value is "false" (Theta * * parameter);</li>
+<li><code>&lt;hweight&gt;</code> — defines the weight of the heuristic function. Should be real number greater or equal 1. Default value is "1" (Theta * * parameter); </li>
+</ul>
+</li>
+</ul>
+
+<p>Definition at line <a class="el" href="XMLReader_8h_source.html#l00073">73</a> of file <a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6f618ae88210ab36b17b6191664d0fa6"></a>
 <div class="memitem">
@@ -116,7 +155,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00019">19</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
+<p><a class="el" href="classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML-file with a specific structu...">XMLReader</a> default constructor. </p>
+
+<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00025">25</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -134,7 +175,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00004">4</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
+<p><a class="el" href="classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML-file with a specific structu...">XMLReader</a> constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>Path to input XML-file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00010">10</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -152,7 +201,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00034">34</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
+<p><a class="el" href="classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML-file with a specific structu...">XMLReader</a> copy constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>Object to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00040">40</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -177,7 +234,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00063">63</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
+<p><a class="el" href="classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML-file with a specific structu...">XMLReader</a> destructor. </p>
+
+<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00069">69</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -203,9 +262,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Method for cloning objects. Create copy of object in memmory and return pointer to copy. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to copy of object </dd></dl>
+
 <p>Implements <a class="el" href="classReader.html#ae36e6b0007de3cf4bf1757319445e879">Reader</a>.</p>
 
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00236">236</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00242">242</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -241,9 +303,19 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Creates object for all agents. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">agents</td><td>Vector of all agents of system. Objects in vector contain full information about each agent. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">numThreshold</td><td>Maximum number of agents in system. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Success of objects creating and transfer process. </dd></dl>
+
 <p>Implements <a class="el" href="classReader.html#aaf53da6921fbf23a0df19d6b7cd18ed2">Reader</a>.</p>
 
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00129">129</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00135">135</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -269,9 +341,18 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Creates object with algorithms and environment parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">envOpt</td><td>Algorithms and environment parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Success of object creating and transfer process. </dd></dl>
+
 <p>Implements <a class="el" href="classReader.html#ae86026a26665e6c5287a3b916109e798">Reader</a>.</p>
 
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00117">117</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00123">123</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -297,9 +378,18 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Creates object with static environment data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">map</td><td>Static environment data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Success of object creating and transfer process. </dd></dl>
+
 <p>Implements <a class="el" href="classReader.html#aca430cd55ec47b3c0ec747ae3f540d2d">Reader</a>.</p>
 
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00104">104</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00110">110</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -317,57 +407,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00179">179</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
+<p>Assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>Object to assign. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to assigned object. </dd></dl>
 
-</div>
-</div>
-<a class="anchor" id="aab3ee8ad9d2506b15695a371abdb2f89"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XMLReader::ReadAgents </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00575">575</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2c1e0b1308fe4c7b52dd31d15d819b81"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XMLReader::ReadAlgorithmOptions </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00475">475</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00185">185</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -392,233 +441,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Starts input data reading from XML-file. </p>
+<dl class="section return"><dt>Returns</dt><dd>Success of file reading. </dd></dl>
+
 <p>Implements <a class="el" href="classReader.html#a1265cd406297a3f5fa548dcfc1bd0d46">Reader</a>.</p>
 
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00153">153</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3b4dec1de601518388a63f1259150894"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XMLReader::ReadMap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00241">241</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a48c0cf36328783c6ee76bd098afa551e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classAgent.html">Agent</a> *&gt;* XMLReader::allAgents</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8h_source.html#l00045">45</a> of file <a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0ca0082b815d103ef876e92f9073e9be"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">XMLDocument* XMLReader::doc</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8h_source.html#l00042">42</a> of file <a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac1cc95efa92fd138b484ce8e1f51d4c2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string XMLReader::fileName</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8h_source.html#l00040">40</a> of file <a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a51fe56cca8bae35f6b6749bf058679b4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;int&gt; &gt;* XMLReader::grid</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8h_source.html#l00048">48</a> of file <a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aba94a9f4c7c974fe4eb72a12089dbb29"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classMap.html">Map</a>* XMLReader::map</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8h_source.html#l00046">46</a> of file <a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a82d713f0a389ebc58cf80d4507dbd193"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="classPoint.html">Point</a>&gt; &gt;* XMLReader::obstacles</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8h_source.html#l00049">49</a> of file <a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4a821072a4ae9a1b04ea7877a863af97"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classEnvironmentOptions.html">EnvironmentOptions</a>* XMLReader::options</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8h_source.html#l00047">47</a> of file <a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae0a7b0d866586d71b9f84693167c9f4d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int XMLReader::plannertype</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8h_source.html#l00050">50</a> of file <a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a315245ff083b357982764c0cf9960e36"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">XMLElement* XMLReader::root</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="XMLReader_8h_source.html#l00043">43</a> of file <a class="el" href="XMLReader_8h_source.html">XMLReader.h</a>.</p>
+<p>Definition at line <a class="el" href="XMLReader_8cpp_source.html#l00159">159</a> of file <a class="el" href="XMLReader_8cpp_source.html">XMLReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -632,7 +460,7 @@ Private Attributes</h2></td></tr>
 <hr size="1"><div style="align: right;">
 <a href="http://wiki.ros.org/ORCAStar">ORCAStar</a><br />
 Author(s): Stepan Drgachev</br />
-<small>autogenerated on Sun May 3 2020 07:52:53</small>
+<small>autogenerated on Wed May 20 2020 15:51:17</small>
 </div>
 </body>
 </html>

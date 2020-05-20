@@ -48,18 +48,9 @@ target_link_libraries(ROSAgent ORCAStarLib TINYXML)
 file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false ./test/*.h
                                                       ./test/*.cpp)
 
-rosbuild_add_executable(test/ORCAStarLibTest ${TEST_SOURCES})
+rosbuild_add_executable(test/ORCAStarTest ${TEST_SOURCES})
 
-rosbuild_add_gtest_build_flags(test/ORCAStarLibTest)
+rosbuild_add_gtest_build_flags(test/ORCAStarTest)
 
-target_link_libraries(test/ORCAStarLibTest ORCAStarLib TINYXML)
+target_link_libraries(test/ORCAStarTest ORCAStarLib TINYXML)
 
-#add_subdirectory(tests)
-
-#common commands for building c++ executables and libraries
-#rosbuild_add_library(${PROJECT_NAME} src/example.cpp)
-#target_link_libraries(${PROJECT_NAME} another_library)
-#rosbuild_add_boost_directories()
-#rosbuild_link_boost(${PROJECT_NAME} thread)
-#rosbuild_add_executable(example examples/example.cpp)
-#target_link_libraries(example ${PROJECT_NAME})

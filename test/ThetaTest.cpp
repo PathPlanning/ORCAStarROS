@@ -58,7 +58,7 @@ class TestTheta : public ::testing::Test
 };
 
 
-TEST_F(TestTheta, PathTest)
+TEST_F(TestTheta, pathTest)
 {
     Point next;
     underTest1->GetNext(s1, next);
@@ -77,11 +77,3 @@ TEST_F(TestTheta, PathTest)
 
 }
 
-TEST_F(TestTheta, OtherTest)
-{
-    Point inp = {1,1};
-    underTest1->AddPointToPath(inp);
-    Point res = underTest1->PullOutNext();
-
-    ASSERT_TRUE(inp == res);
-}

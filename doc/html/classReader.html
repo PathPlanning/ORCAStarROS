@@ -9,6 +9,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -27,9 +28,12 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classReader-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Reader Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Reader Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__ORCAStarLib.html">ORCAStar Library</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classReader.html" title="Reader class implements base interface for input data reading. ">Reader</a> class implements base interface for input data reading.  
+ <a href="classReader.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Reader_8h_source.html">Reader.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -37,28 +41,35 @@ Inheritance diagram for Reader:</div>
 <div class="dyncontent">
 <div class="center"><img src="classReader__inherit__graph.png" border="0" usemap="#Reader_inherit__map" alt="Inheritance graph"/></div>
 <map name="Reader_inherit__map" id="Reader_inherit__map">
-<area shape="rect" id="node2" href="classXMLReader.html" title="XMLReader" alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node2" href="classXMLReader.html" title="The XMLReader class implements interface for input data reading from XML&#45;file with a specific structu..." alt="" coords="5,80,96,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae36e6b0007de3cf4bf1757319445e879"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classReader.html">Reader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReader.html#ae36e6b0007de3cf4bf1757319445e879">Clone</a> () const =0</td></tr>
+<tr class="memdesc:ae36e6b0007de3cf4bf1757319445e879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract method for cloning inheritors objects. Implementations of this method should create copy of object in memmory and return pointer to copy.  <a href="#ae36e6b0007de3cf4bf1757319445e879">More...</a><br /></td></tr>
 <tr class="separator:ae36e6b0007de3cf4bf1757319445e879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf53da6921fbf23a0df19d6b7cd18ed2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReader.html#aaf53da6921fbf23a0df19d6b7cd18ed2">GetAgents</a> (std::vector&lt; <a class="el" href="classAgent.html">Agent</a> * &gt; &amp;agents, const int &amp;numThreshold)=0</td></tr>
+<tr class="memdesc:aaf53da6921fbf23a0df19d6b7cd18ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract method. Should creates object for all agents.  <a href="#aaf53da6921fbf23a0df19d6b7cd18ed2">More...</a><br /></td></tr>
 <tr class="separator:aaf53da6921fbf23a0df19d6b7cd18ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae86026a26665e6c5287a3b916109e798"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReader.html#ae86026a26665e6c5287a3b916109e798">GetEnvironmentOptions</a> (<a class="el" href="classEnvironmentOptions.html">EnvironmentOptions</a> **envOpt)=0</td></tr>
+<tr class="memdesc:ae86026a26665e6c5287a3b916109e798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract method. Should creates object with algorithms and environment parameters.  <a href="#ae86026a26665e6c5287a3b916109e798">More...</a><br /></td></tr>
 <tr class="separator:ae86026a26665e6c5287a3b916109e798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca430cd55ec47b3c0ec747ae3f540d2d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReader.html#aca430cd55ec47b3c0ec747ae3f540d2d">GetMap</a> (<a class="el" href="classMap.html">Map</a> **map)=0</td></tr>
+<tr class="memdesc:aca430cd55ec47b3c0ec747ae3f540d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract method. Should creates object with static environment data.  <a href="#aca430cd55ec47b3c0ec747ae3f540d2d">More...</a><br /></td></tr>
 <tr class="separator:aca430cd55ec47b3c0ec747ae3f540d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1265cd406297a3f5fa548dcfc1bd0d46"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReader.html#a1265cd406297a3f5fa548dcfc1bd0d46">ReadData</a> ()=0</td></tr>
+<tr class="memdesc:a1265cd406297a3f5fa548dcfc1bd0d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract method. Should starts input data reading from file or from another source.  <a href="#a1265cd406297a3f5fa548dcfc1bd0d46">More...</a><br /></td></tr>
 <tr class="separator:a1265cd406297a3f5fa548dcfc1bd0d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a357153a7085f8b606de954a80411e27a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReader.html#a357153a7085f8b606de954a80411e27a">~Reader</a> ()</td></tr>
+<tr class="memdesc:a357153a7085f8b606de954a80411e27a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classReader.html" title="Reader class implements base interface for input data reading. ">Reader</a> virtual destructor.  <a href="#a357153a7085f8b606de954a80411e27a">More...</a><br /></td></tr>
 <tr class="separator:a357153a7085f8b606de954a80411e27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="Reader_8h_source.html#l00012">12</a> of file <a class="el" href="Reader_8h_source.html">Reader.h</a>.</p>
+<div class="textblock"><p><a class="el" href="classReader.html" title="Reader class implements base interface for input data reading. ">Reader</a> class implements base interface for input data reading. </p>
+
+<p>Definition at line <a class="el" href="Reader_8h_source.html#l00021">21</a> of file <a class="el" href="Reader_8h_source.html">Reader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a357153a7085f8b606de954a80411e27a"></a>
 <div class="memitem">
@@ -81,7 +92,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Reader_8h_source.html#l00015">15</a> of file <a class="el" href="Reader_8h_source.html">Reader.h</a>.</p>
+<p><a class="el" href="classReader.html" title="Reader class implements base interface for input data reading. ">Reader</a> virtual destructor. </p>
+
+<p>Definition at line <a class="el" href="Reader_8h_source.html#l00027">27</a> of file <a class="el" href="Reader_8h_source.html">Reader.h</a>.</p>
 
 </div>
 </div>
@@ -106,6 +119,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Abstract method for cloning inheritors objects. Implementations of this method should create copy of object in memmory and return pointer to copy. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to copy of object </dd></dl>
 
 <p>Implemented in <a class="el" href="classXMLReader.html#a914c0648e81ef0b70336b550d5833800">XMLReader</a>.</p>
 
@@ -143,6 +159,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Abstract method. Should creates object for all agents. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">agents</td><td>Vector of all agents of system. Objects in vector contain full information about each agent. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">numThreshold</td><td>Maximum number of agents in system. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Success of objects creating and transfer process. </dd></dl>
+
 <p>Implemented in <a class="el" href="classXMLReader.html#a54da1883de19a33b66324697acaa931b">XMLReader</a>.</p>
 
 </div>
@@ -168,6 +194,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Abstract method. Should creates object with algorithms and environment parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">envOpt</td><td>Algorithms and environment parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Success of object creating and transfer process. </dd></dl>
 
 <p>Implemented in <a class="el" href="classXMLReader.html#a8b2c52613ec15dfdedcd74e1a544f630">XMLReader</a>.</p>
 
@@ -195,6 +230,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Abstract method. Should creates object with static environment data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">map</td><td>Static environment data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Success of object creating and transfer process. </dd></dl>
+
 <p>Implemented in <a class="el" href="classXMLReader.html#abaa4cd738f17dafb9f06b361129a46ae">XMLReader</a>.</p>
 
 </div>
@@ -220,6 +264,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Abstract method. Should starts input data reading from file or from another source. </p>
+<dl class="section return"><dt>Returns</dt><dd>Success of data reading. </dd></dl>
+
 <p>Implemented in <a class="el" href="classXMLReader.html#a9cc6bf316e61dbd945f2a97a8df61b9c">XMLReader</a>.</p>
 
 </div>
@@ -233,7 +280,7 @@ Public Member Functions</h2></td></tr>
 <hr size="1"><div style="align: right;">
 <a href="http://wiki.ros.org/ORCAStar">ORCAStar</a><br />
 Author(s): Stepan Drgachev</br />
-<small>autogenerated on Sun May 3 2020 07:52:53</small>
+<small>autogenerated on Wed May 20 2020 15:51:17</small>
 </div>
 </body>
 </html>

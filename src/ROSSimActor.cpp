@@ -1,3 +1,8 @@
+/*!
+\file
+\brief File contains ROSSimActor class implementation.
+*/
+
 #include "ROSSimActor.h"
 
 

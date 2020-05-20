@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains Node, Point, Line, Vertex, ObstacleSegment, Utils methods and functions implementations.
+*/
+
+
 #include "Geom.h"
 
 

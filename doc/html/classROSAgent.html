@@ -9,6 +9,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -25,14 +26,13 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classROSAgent-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ROSAgent Class Reference</div>  </div>
+<div class="title">ROSAgent Class Reference<div class="ingroups"><a class="el" href="group__ORCAStarROS.html">ORCAStar ROS Modules</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The ScanNPlan class is a client of the vision and path plan servers. The ScanNPLan class takes these services, computes transforms and published commands to the robot.  
+<p>Class is an implementation of single agent navigation ROS module based on ORCAStar algorithm.  
  <a href="classROSAgent.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>&gt;</code></p>
@@ -47,32 +47,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8ea4de6b43bda8297d50e83f807e7ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54ef509f6df366d6a0c15ba23cacf3ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROSAgent.html#a54ef509f6df366d6a0c15ba23cacf3ea">~ROSAgent</a> ()=default</td></tr>
 <tr class="separator:a54ef509f6df366d6a0c15ba23cacf3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a4eeef695e269faa6daa77adebf860ff5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classORCAAgent.html">ORCAAgent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROSAgent.html#a4eeef695e269faa6daa77adebf860ff5">agent</a></td></tr>
-<tr class="separator:a4eeef695e269faa6daa77adebf860ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99f6036a49099c0a711d37c994b3fe2f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROSAgent.html#a99f6036a49099c0a711d37c994b3fe2f">agentId</a></td></tr>
-<tr class="separator:a99f6036a49099c0a711d37c994b3fe2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e837af5e70c2cfe655843160f48be43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMap.html">Map</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROSAgent.html#a8e837af5e70c2cfe655843160f48be43">map</a></td></tr>
-<tr class="separator:a8e837af5e70c2cfe655843160f48be43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe45d28dadd56eef318e2ac9a39e3074"><td class="memItemLeft" align="right" valign="top">ros::NodeHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROSAgent.html#abe45d28dadd56eef318e2ac9a39e3074">n</a></td></tr>
-<tr class="separator:abe45d28dadd56eef318e2ac9a39e3074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b7c18f7371f2357b50dbdb0a27d59c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classAgent.html">Agent</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROSAgent.html#a51b7c18f7371f2357b50dbdb0a27d59c">neighbous</a></td></tr>
-<tr class="separator:a51b7c18f7371f2357b50dbdb0a27d59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae56ad52f2398195384bc73b03711c106"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classEnvironmentOptions.html">EnvironmentOptions</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROSAgent.html#ae56ad52f2398195384bc73b03711c106">options</a></td></tr>
-<tr class="separator:ae56ad52f2398195384bc73b03711c106"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91a195526ee43cb46796f1be142f617c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAgentParam.html">AgentParam</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROSAgent.html#a91a195526ee43cb46796f1be142f617c">param</a></td></tr>
-<tr class="separator:a91a195526ee43cb46796f1be142f617c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1635964b744149bfbe0d72dc50921fb"><td class="memItemLeft" align="right" valign="top">ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROSAgent.html#ae1635964b744149bfbe0d72dc50921fb">ROSAgentPub</a></td></tr>
-<tr class="separator:ae1635964b744149bfbe0d72dc50921fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c3097f176a29c52a058e47473ef72c4"><td class="memItemLeft" align="right" valign="top">ros::Subscriber&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROSAgent.html#a2c3097f176a29c52a058e47473ef72c4">ROSAgentSub</a></td></tr>
-<tr class="separator:a2c3097f176a29c52a058e47473ef72c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The ScanNPlan class is a client of the vision and path plan servers. The ScanNPLan class takes these services, computes transforms and published commands to the robot. </p>
-
-<p>Definition at line <a class="el" href="ROSAgent_8h_source.html#l00020">20</a> of file <a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>.</p>
+<div class="textblock"><p>Class is an implementation of single agent navigation ROS module based on ORCAStar algorithm. </p>
+<p>The main part in a navigation system is the single agent navigation module. This component can be used both for embedding a separate robot and for centralized calculation of trajectories, but using distributed computing. The single agent navigation implemented as a ROS node. The node operation is divided into 2 stages. At the first stage, node is initialized, the algorithms parameters and static environment data are requested from ROS services, global path is created. The node sends a request to service <code>initAgentServer_*id*</code> (Service description: <b>[LINK]</b>, <code>id</code> is identifier of agent, which sets as ROS private parameter) and awaits a response. For using ROS <a class="el" href="classAgent.html" title="Agent class implements base agent interface and behavior. ">Agent</a> node you should launch such service. After that, the node sends a request to the service <code>static_map</code> of <code>map_server</code> node. You should launch this node before launching ROS <a class="el" href="classAgent.html" title="Agent class implements base agent interface and behavior. ">Agent</a> node. At the second stage the process of following the global path starts. The node waits for messages in topic <code>AgentInput_*id*</code>. After a message with input data (<b>[LINK]</b>) appears in the topic <code>AgentInput_*id*</code>, new velocity computation procedure starts. New velocity publishes in the topic <code>AgentOutput*id*</code> (in <a href="http://docs.ros.org/api/geometry_msgs/html/msg/Point32.html">geometry_msgs::Point32</a> format). The second stage continues until the node is working. An illustration of the operation of the node is presented in the figure below.</p>
+<div class="image">
+<img src="./images/ROSAgent.png"  width="300" alt="Map sheme"/>
+</div>
+ 
+<p>Definition at line <a class="el" href="ROSAgent_8h_source.html#l00060">60</a> of file <a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad6f00219b6df17505130d36626471f20"></a>
 <div class="memitem">
@@ -94,6 +77,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><a class="el" href="classROSAgent.html" title="Class is an implementation of single agent navigation ROS module based on ORCAStar algorithm...">ROSAgent</a> default constructor </p>
 
 </div>
 </div>
@@ -110,8 +94,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="el" href="classROSAgent.html" title="Class is an implementation of single agent navigation ROS module based on ORCAStar algorithm...">ROSAgent</a> constructor with agent id. Use this constructor for correct initialization. In this constructor ROS communication objects are created and initial input data is requested. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>identifier for debug and topics names </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="ROSAgent_8cpp_source.html#l00003">3</a> of file <a class="el" href="ROSAgent_8cpp_source.html">ROSAgent.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ROSAgent_8cpp_source.html#l00009">9</a> of file <a class="el" href="ROSAgent_8cpp_source.html">ROSAgent.cpp</a>.</p>
 
 </div>
 </div>
@@ -135,6 +125,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><a class="el" href="classROSAgent.html" title="Class is an implementation of single agent navigation ROS module based on ORCAStar algorithm...">ROSAgent</a> default destructor </p>
 
 </div>
 </div>
@@ -152,207 +143,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The method for calculating the new velocity. Contains the correct start order of the ORCAStar algorithm procedures. ORCAStar algorithm see implemented in <a class="el" href="group__ORCAStarLib.html">ORCAStar Library</a>. This method is called automatically when a message appears in the AgentInput_*agentId* topic. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>ORCAStar input data as ROS message </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="ROSAgent_8cpp_source.html#l00113">113</a> of file <a class="el" href="ROSAgent_8cpp_source.html">ROSAgent.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a4eeef695e269faa6daa77adebf860ff5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classORCAAgent.html">ORCAAgent</a>* ROSAgent::agent</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ROSAgent_8h_source.html#l00032">32</a> of file <a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a99f6036a49099c0a711d37c994b3fe2f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t ROSAgent::agentId</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ROSAgent_8h_source.html#l00031">31</a> of file <a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8e837af5e70c2cfe655843160f48be43"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classMap.html">Map</a>* ROSAgent::map</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ROSAgent_8h_source.html#l00042">42</a> of file <a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abe45d28dadd56eef318e2ac9a39e3074"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ros::NodeHandle ROSAgent::n</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ROSAgent_8h_source.html#l00036">36</a> of file <a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a51b7c18f7371f2357b50dbdb0a27d59c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classAgent.html">Agent</a> *&gt; ROSAgent::neighbous</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ROSAgent_8h_source.html#l00033">33</a> of file <a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae56ad52f2398195384bc73b03711c106"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classEnvironmentOptions.html">EnvironmentOptions</a>* ROSAgent::options</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ROSAgent_8h_source.html#l00040">40</a> of file <a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a91a195526ee43cb46796f1be142f617c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classAgentParam.html">AgentParam</a>* ROSAgent::param</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ROSAgent_8h_source.html#l00041">41</a> of file <a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae1635964b744149bfbe0d72dc50921fb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ros::Publisher ROSAgent::ROSAgentPub</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ROSAgent_8h_source.html#l00037">37</a> of file <a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2c3097f176a29c52a058e47473ef72c4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ros::Subscriber ROSAgent::ROSAgentSub</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ROSAgent_8h_source.html#l00038">38</a> of file <a class="el" href="ROSAgent_8h_source.html">ROSAgent.h</a>.</p>
+<p>Definition at line <a class="el" href="ROSAgent_8cpp_source.html#l00119">119</a> of file <a class="el" href="ROSAgent_8cpp_source.html">ROSAgent.cpp</a>.</p>
 
 </div>
 </div>
@@ -366,7 +164,7 @@ Private Attributes</h2></td></tr>
 <hr size="1"><div style="align: right;">
 <a href="http://wiki.ros.org/ORCAStar">ORCAStar</a><br />
 Author(s): Stepan Drgachev</br />
-<small>autogenerated on Sun May 3 2020 07:52:53</small>
+<small>autogenerated on Wed May 20 2020 15:51:17</small>
 </div>
 </body>
 </html>

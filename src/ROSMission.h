@@ -1,3 +1,7 @@
+/*!
+\file
+\brief File contains ROSMission class.
+*/
 
 #include <vector>
 
@@ -16,28 +20,58 @@
 #define ORCASTAR_ROSMISSION_H
 
 
-
+/*!
+* \brief Class is an implementation of multiagent navigation ROS module.
+* \ingroup ORCAStarROS
+*/
 
 class ROSMission
 {
 
     public:
 
+        /*!
+            \brief ROSMission constructor with parameters.
+            Initialize multiagent simulation.
+            Creates ROS topics and services.
+            \param fileName Path to XML file with multiagent task
+            \param agNum Number of agents
+            \param threashold Simulation step threashold (default - no threashold)
+            \param endOnFin End the simulation when the threshold is reached or when all agents reach their finish positions
+        */
         ROSMission(std::string fileName, size_t agNum, int threashold = -1, bool endOnFin = false);
+
+        /*!
+           \brief Default ROSMission destructor
+        */
         ~ROSMission();
 
+        /*!
+         * \brief Prepare simulation of multiagen navigation.
+         * Read task from XML file.
+         * Create ROS service for agent initialization.
+         *
+         * \return Success of file reading
+         */
         bool PrepareSimulation();
+
+        /*!
+         * \brief Start multiagent simulation execution
+         */
         void StartSimulation();
+
+
+
+
+    private:
         void GenerateAgentStateMsg();
         void UpdateVelocity(const ORCAStar::AgentVelocity &msg);
         void UpdateState();
         bool IsFinished();
-
-    private:
-
         bool ReadTask();
         bool InitAgent(ORCAStar::Init::Request  &req, ORCAStar::Init::Response &res);
 
+        ///@cond
         size_t agNumber;
         size_t agCount;
         unsigned int stepsCount;
@@ -60,7 +94,7 @@ class ROSMission
         bool initFlag;
         bool endOnFinish;
 
-
+        ///@endcond
 
 
 

@@ -1,10 +1,7 @@
-/* (c) 2017. Andreychuk A.
- * This class implements line-of-sight function for a variable size of agent.
- * It also has a method for checking cell's traversability.
- * For its work is needed the size of agent and a map container that has 'cellIsObstacle' and 'cellOnGrid' methods.
- * If it is not possible to give the permission to access the grid, the one can use 'getCellsCrossedByLine' method.
- * It doesn't use grid and returns a set of all cells(as pairs of coordinates) that are crossed by an agent moving along a line.
- */
+/*!
+\file
+\brief File contains LineOfSight class.
+*/
 
 #ifndef LINEOFSIGHT_H
 #define LINEOFSIGHT_H
@@ -19,9 +16,24 @@
 
 #include "Const.h"
 
+
+/*!
+ * \brief This class implements line-of-sight function between two cells on the grid for a variable size of agent.
+ * \details It also has a method for checking cell's traversability.
+ * For its work is needed the size of agent and a map container that has 'cellIsObstacle' and 'cellOnGrid' methods.
+ * \author Andreychuk A.
+ * \date 2017
+ * \ingroup ORCAStarLib
+ */
+
+
 class LineOfSight
 {
 public:
+    /*!
+     * \brief LineOfSight constructor.
+     * \param agentSize Size of Agent relative to grid cell size.
+     */
     LineOfSight(double agentSize = 0.5)
     {
         this->agentSize = agentSize;
@@ -38,6 +50,10 @@ public:
             cells.push_back({0,0});
     }
 
+    /*!
+     * \brief Set size of agent.
+     * \param agentSize Size of Agent relative to grid cell size.
+     */
     void setSize(double agentSize)
     {
         this->agentSize = agentSize;
@@ -55,6 +71,15 @@ public:
             cells.push_back({0,0});
     }
 
+    /*!
+     * \brief Returns all cells on grid that are affected by agent during moving along a line.
+     * \param x1 i-coordinate of first cell of line.
+     * \param y1 j-coordinate of first cell of line.
+     * \param x2 i-coordinate of last cell of line.
+     * \param y2 j-coordinate of last cell of line.
+     * \param map Map object.
+     * \return All cells that are affected by agent during moving along a line.
+     */
     template <class T>
     std::vector<std::pair<int, int>> getCellsCrossedByLine(int x1, int y1, int x2, int y2, const T &map)
     {
@@ -169,8 +194,14 @@ public:
             }
         return lineCells;
     }
-    //returns all cells that are affected by agent during moving along a line
 
+    /*!
+     * \brief Checks traversability of all cells on grid affected by agent's body
+     * \param x i-coordinate of cell.
+     * \param y j-coordinate of cell.
+     * \param map Map object.
+     * \return Traversability of all cells affected by agent's body
+     */
     template <class T>
     bool checkTraversability(int x, int y, const T &map)
     {
@@ -179,8 +210,17 @@ public:
                 return false;
         return true;
     }
-    //checks traversability of all cells affected by agent's body
 
+
+    /*!
+     * \brief Checks line-of-sight between two cells.
+     * \param x1 i-coordinate of first cell of line.
+     * \param y1 j-coordinate of first cell of line.
+     * \param x2 i-coordinate of last cell of line.
+     * \param y2 j-coordinate of last cell of line.
+     * \param map Map object.
+     * \return True, if there is a line of sight between the cells, otherwise - false.
+     */
     template <class T>
     bool checkLine(int x1, int y1, int x2, int y2, const T &map)
     {
@@ -289,7 +329,14 @@ public:
         }
         return true;
     }
-    //checks line-of-sight between a line
+
+
+    /*!
+     * \brief Returns all cells on grid that are affected by agent in position (i,j).
+     * \param i i-coordinate of first cell of line.
+     * \param j j-coordinate of first cell of line.
+     * \return All cells that are affected by agent in position (i,j).
+     */
     std::vector<std::pair<int, int>> getCells(int i, int j)
     {
         std::vector<std::pair<int, int>> cells;
@@ -298,8 +345,10 @@ public:
         return cells;
     }
 private:
+    //! \cond
     double agentSize;
     std::vector<std::pair<int, int>> cells; //cells that are affected by agent's body
+    //!\endcond
 };
 
 #endif // LINEOFSIGHT_H

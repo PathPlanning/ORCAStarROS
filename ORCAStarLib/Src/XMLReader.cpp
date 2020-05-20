@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains XMLReader class implementation.
+*/
+
+
 #include "XMLReader.h"
 
 

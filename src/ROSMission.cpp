@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains ROSMission class implementation.
+*/
+
+
 #include "ROSMission.h"
 
 

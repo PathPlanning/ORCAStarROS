@@ -85,7 +85,7 @@
 
 //}
 
-TEST(TestSuite, testCase1)
+TEST(TestSuite, testCase)
 {
     ASSERT_TRUE(true);
 }

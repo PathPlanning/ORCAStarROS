@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains EnvironmentOptions class implementation.
+*/
+
+
 #include "EnvironmentOptions.h"
 
 EnvironmentOptions::EnvironmentOptions(const EnvironmentOptions &obj)

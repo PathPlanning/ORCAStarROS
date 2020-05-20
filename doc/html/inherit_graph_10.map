@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classPoint.html" title="Point" alt="" coords="5,5,57,32"/>
-<area shape="rect" id="node2" href="$classVertex.html" title="Vertex" alt="" coords="105,5,165,32"/>
+<area shape="rect" id="node1" href="$classPoint.html" title="The Point class defines a position (or euclidean vector from (0,0)) in 2D space. " alt="" coords="5,5,57,32"/>
+<area shape="rect" id="node2" href="$classVertex.html" title="The Vertex class defines a vertex of an obstacle polygon. " alt="" coords="105,5,165,32"/>
 </map>

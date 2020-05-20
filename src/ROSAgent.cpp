@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains ROSAgent class implementation.
+*/
+
+
 #include "ROSAgent.h"
 
 ROSAgent::ROSAgent(size_t id)
@@ -25,7 +31,7 @@ ROSAgent::ROSAgent(size_t id)
                                      CN_DEFAULT_HWEIGHT, CN_DEFAULT_TIME_STEP, srv.response.delta);
 
     param = new AgentParam(srv.response.sightRadius,srv.response.timeBoundary,srv.response.timeBoundaryObst,
-                           srv.response.radius, CN_DEFAULT_REPS, srv.response.speed, srv.response.agentMaxNum, 0);
+                           srv.response.radius, CN_DEFAULT_REPS, srv.response.speed, srv.response.agentMaxNum);
 
     Point start = {srv.response.start.x, srv.response.start.y};
     Point goal = {srv.response.goal.x, srv.response.goal.y};

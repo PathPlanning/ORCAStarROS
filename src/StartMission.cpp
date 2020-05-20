@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains program for multiagent simulation launching.
+*/
+
+
 #include "ROSMission.h"
 
 

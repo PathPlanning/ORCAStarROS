@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+    <agents number="12">
+	    <default_parameters size="0.25" movespeed="1" agentsmaxnum="10" timeboundary="5.4" sightradius="3.0" timeboundaryobst="33"/>
+        <agent id="0" start.xr="1.5" start.yr="7.5" goal.xr="2.5" goal.yr="1.5"/>
+        <agent id="1" start.xr="6.5" start.yr="7.5" goal.xr="7.5" goal.yr="1.5"/>
+        <agent id="2" start.xr="11.5" start.yr="7.5" goal.xr="12.5" goal.yr="1.5"/>
+        <agent id="3" start.xr="16.5" start.yr="7.5" goal.xr="17.5" goal.yr="1.5"/>
+        <agent id="4" start.xr="21.5" start.yr="7.5" goal.xr="22.5" goal.yr="1.5"/>
+        <agent id="5" start.xr="28.5" start.yr="7.5" goal.xr="29.5" goal.yr="1.5"/>
+
+        <agent id="6" start.xr="2.5" start.yr="1.5" goal.xr="1.5" goal.yr="7.5"/>
+        <agent id="7" start.xr="7.5" start.yr="1.5" goal.xr="6.5" goal.yr="7.5"/>
+        <agent id="8" start.xr="12.5" start.yr="1.5" goal.xr="11.5" goal.yr="7.5"/>
+        <agent id="9" start.xr="17.5" start.yr="1.5" goal.xr="16.5" goal.yr="7.5"/>
+        <agent id="10" start.xr="22.5" start.yr="1.5" goal.xr="21.5" goal.yr="7.5"/>
+        <agent id="11" start.xr="29.5" start.yr="1.5" goal.xr="28.5" goal.yr="7.5"/>
+    </agents>
+
+    <obstacles number="16">
+	<obstacle><vertex xr="0" yr="0"/><vertex xr="31" yr="0"/><vertex xr="31" yr="9"/><vertex xr="0" yr="9"/></obstacle><obstacle><vertex xr="1" yr="8"/><vertex xr="30" yr="8"/><vertex xr="30" yr="1"/><vertex xr="1" yr="1"/></obstacle><obstacle><vertex xr="26" yr="4"/><vertex xr="26" yr="3"/><vertex xr="27" yr="3"/><vertex xr="27" yr="5"/><vertex xr="28" yr="5"/><vertex xr="28" yr="6"/><vertex xr="26" yr="6"/><vertex xr="26" yr="7"/><vertex xr="25" yr="7"/><vertex xr="25" yr="6"/><vertex xr="23" yr="6"/><vertex xr="23" yr="5"/><vertex xr="24" yr="5"/><vertex xr="24" yr="3"/><vertex xr="25" yr="3"/><vertex xr="25" yr="4"/></obstacle><obstacle><vertex xr="4" yr="5"/><vertex xr="5" yr="5"/><vertex xr="5" yr="6"/><vertex xr="4" yr="6"/></obstacle><obstacle><vertex xr="8" yr="2"/><vertex xr="9" yr="2"/><vertex xr="9" yr="3"/><vertex xr="10" yr="3"/><vertex xr="10" yr="4"/><vertex xr="9" yr="4"/><vertex xr="9" yr="5"/><vertex xr="10" yr="5"/><vertex xr="10" yr="6"/><vertex xr="8" yr="6"/></obstacle><obstacle><vertex xr="14" yr="6"/><vertex xr="14" yr="5"/><vertex xr="16" yr="5"/><vertex xr="16" yr="6"/></obstacle><obstacle><vertex xr="19" yr="5"/><vertex xr="20" yr="5"/><vertex xr="20" yr="6"/><vertex xr="19" yr="6"/></obstacle><obstacle><vertex xr="3" yr="3"/><vertex xr="4" yr="3"/><vertex xr="4" yr="5"/><vertex xr="3" yr="5"/></obstacle><obstacle><vertex xr="5" yr="3"/><vertex xr="6" yr="3"/><vertex xr="6" yr="5"/><vertex xr="5" yr="5"/></obstacle><obstacle><vertex xr="10" yr="4"/><vertex xr="11" yr="4"/><vertex xr="11" yr="5"/><vertex xr="10" yr="5"/></obstacle><obstacle><vertex xr="13" yr="3"/><vertex xr="14" yr="3"/><vertex xr="14" yr="5"/><vertex xr="13" yr="5"/></obstacle><obstacle><vertex xr="18" yr="2"/><vertex xr="19" yr="2"/><vertex xr="19" yr="3"/><vertex xr="20" yr="3"/><vertex xr="20" yr="2"/><vertex xr="21" yr="2"/><vertex xr="21" yr="5"/><vertex xr="20" yr="5"/><vertex xr="20" yr="4"/><vertex xr="19" yr="4"/><vertex xr="19" yr="5"/><vertex xr="18" yr="5"/></obstacle><obstacle><vertex xr="4" yr="2"/><vertex xr="5" yr="2"/><vertex xr="5" yr="3"/><vertex xr="4" yr="3"/></obstacle><obstacle><vertex xr="10" yr="2"/><vertex xr="11" yr="2"/><vertex xr="11" yr="3"/><vertex xr="10" yr="3"/></obstacle><obstacle><vertex xr="14" yr="3"/><vertex xr="14" yr="2"/><vertex xr="16" yr="2"/><vertex xr="16" yr="3"/></obstacle><obstacle><vertex xr="0" yr="0"/><vertex xr="0" yr="9"/><vertex xr="31" yr="9"/><vertex xr="31" yr="0"/></obstacle></obstacles>
+    <map>
+        <width>31</width>
+        <height>9</height>
+        <cellsize>1</cellsize>
+        <grid>
+        <row>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</row><row>1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1</row><row>1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1</row><row>1 0 0 0 1 0 0 0 1 1 0 0 0 0 1 1 0 0 0 1 0 0 0 1 1 1 1 1 0 0 1</row><row>1 0 0 1 0 1 0 0 1 0 1 0 0 1 0 0 0 0 1 0 1 0 0 0 1 1 1 0 0 0 1</row><row>1 0 0 1 0 1 0 0 1 1 0 0 0 1 0 0 0 0 1 1 1 0 0 0 1 0 1 0 0 0 1</row><row>1 0 0 0 1 0 0 0 1 0 1 0 0 0 1 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1</row><row>1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1</row><row>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</row></grid>
+    </map>
+
+    <algorithm>
+        <breakingties>0</breakingties>
+        <allowsqueeze>false</allowsqueeze>
+        <cutcorners>false</cutcorners>
+        <hweight>1</hweight>
+        <timestep>0.1</timestep>
+        <delta>0.1</delta>
+    </algorithm>
+</root>

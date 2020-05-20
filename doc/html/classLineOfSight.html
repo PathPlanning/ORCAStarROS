@@ -9,6 +9,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -25,12 +26,14 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classLineOfSight-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LineOfSight Class Reference</div>  </div>
+<div class="title">LineOfSight Class Reference<div class="ingroups"><a class="el" href="group__ORCAStarLib.html">ORCAStar Library</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class implements line-of-sight function between two cells on the grid for a variable size of agent.  
+ <a href="classLineOfSight.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -38,30 +41,32 @@
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a971660bb9a29593d62ba2a81f6a63f90"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a971660bb9a29593d62ba2a81f6a63f90"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classLineOfSight.html#a971660bb9a29593d62ba2a81f6a63f90">checkLine</a> (int x1, int y1, int x2, int y2, const T &amp;map)</td></tr>
+<tr class="memdesc:a971660bb9a29593d62ba2a81f6a63f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks line-of-sight between two cells.  <a href="#a971660bb9a29593d62ba2a81f6a63f90">More...</a><br /></td></tr>
 <tr class="separator:a971660bb9a29593d62ba2a81f6a63f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae45230970be9cd1254b785fb75fcc8f1"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ae45230970be9cd1254b785fb75fcc8f1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classLineOfSight.html#ae45230970be9cd1254b785fb75fcc8f1">checkTraversability</a> (int x, int y, const T &amp;map)</td></tr>
+<tr class="memdesc:ae45230970be9cd1254b785fb75fcc8f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks traversability of all cells on grid affected by agent's body.  <a href="#ae45230970be9cd1254b785fb75fcc8f1">More...</a><br /></td></tr>
 <tr class="separator:ae45230970be9cd1254b785fb75fcc8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf5e3c5e569ea6ca4b0b4912bd502893"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLineOfSight.html#acf5e3c5e569ea6ca4b0b4912bd502893">getCells</a> (int i, int j)</td></tr>
+<tr class="memdesc:acf5e3c5e569ea6ca4b0b4912bd502893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all cells on grid that are affected by agent in position (i,j).  <a href="#acf5e3c5e569ea6ca4b0b4912bd502893">More...</a><br /></td></tr>
 <tr class="separator:acf5e3c5e569ea6ca4b0b4912bd502893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d441b04c08bfde58c49728868a520f6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a0d441b04c08bfde58c49728868a520f6"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classLineOfSight.html#a0d441b04c08bfde58c49728868a520f6">getCellsCrossedByLine</a> (int x1, int y1, int x2, int y2, const T &amp;map)</td></tr>
+<tr class="memdesc:a0d441b04c08bfde58c49728868a520f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all cells on grid that are affected by agent during moving along a line.  <a href="#a0d441b04c08bfde58c49728868a520f6">More...</a><br /></td></tr>
 <tr class="separator:a0d441b04c08bfde58c49728868a520f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b0e653073c780f028298dfeb23d87c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLineOfSight.html#a5b0e653073c780f028298dfeb23d87c5">LineOfSight</a> (double <a class="el" href="classLineOfSight.html#ac810fe22dbe7404a1ef0af18794a2418">agentSize</a>=0.5)</td></tr>
+<tr class="memitem:a5b0e653073c780f028298dfeb23d87c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLineOfSight.html#a5b0e653073c780f028298dfeb23d87c5">LineOfSight</a> (double agentSize=0.5)</td></tr>
+<tr class="memdesc:a5b0e653073c780f028298dfeb23d87c5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLineOfSight.html" title="This class implements line-of-sight function between two cells on the grid for a variable size of age...">LineOfSight</a> constructor.  <a href="#a5b0e653073c780f028298dfeb23d87c5">More...</a><br /></td></tr>
 <tr class="separator:a5b0e653073c780f028298dfeb23d87c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a1d05b915afdcb9caf81eff34dfa5f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLineOfSight.html#a4a1d05b915afdcb9caf81eff34dfa5f4">setSize</a> (double <a class="el" href="classLineOfSight.html#ac810fe22dbe7404a1ef0af18794a2418">agentSize</a>)</td></tr>
+<tr class="memitem:a4a1d05b915afdcb9caf81eff34dfa5f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLineOfSight.html#a4a1d05b915afdcb9caf81eff34dfa5f4">setSize</a> (double agentSize)</td></tr>
+<tr class="memdesc:a4a1d05b915afdcb9caf81eff34dfa5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set size of agent.  <a href="#a4a1d05b915afdcb9caf81eff34dfa5f4">More...</a><br /></td></tr>
 <tr class="separator:a4a1d05b915afdcb9caf81eff34dfa5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac810fe22dbe7404a1ef0af18794a2418"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLineOfSight.html#ac810fe22dbe7404a1ef0af18794a2418">agentSize</a></td></tr>
-<tr class="separator:ac810fe22dbe7404a1ef0af18794a2418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d324bc30f1744fdf1622c223793bdf4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLineOfSight.html#a4d324bc30f1744fdf1622c223793bdf4">cells</a></td></tr>
-<tr class="separator:a4d324bc30f1744fdf1622c223793bdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00022">22</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
+<div class="textblock"><p>This class implements line-of-sight function between two cells on the grid for a variable size of agent. </p>
+<p>It also has a method for checking cell's traversability. For its work is needed the size of agent and a map container that has 'cellIsObstacle' and 'cellOnGrid' methods. </p><dl class="section author"><dt>Author</dt><dd>Andreychuk A. </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2017 </dd></dl>
+
+<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00030">30</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5b0e653073c780f028298dfeb23d87c5"></a>
 <div class="memitem">
@@ -85,7 +90,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00025">25</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
+<p><a class="el" href="classLineOfSight.html" title="This class implements line-of-sight function between two cells on the grid for a variable size of age...">LineOfSight</a> constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">agentSize</td><td>Size of <a class="el" href="classAgent.html" title="Agent class implements base agent interface and behavior. ">Agent</a> relative to grid cell size. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00037">37</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
 
 </div>
 </div>
@@ -142,7 +155,20 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00185">185</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
+<p>Checks line-of-sight between two cells. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>i-coordinate of first cell of line. </td></tr>
+    <tr><td class="paramname">y1</td><td>j-coordinate of first cell of line. </td></tr>
+    <tr><td class="paramname">x2</td><td>i-coordinate of last cell of line. </td></tr>
+    <tr><td class="paramname">y2</td><td>j-coordinate of last cell of line. </td></tr>
+    <tr><td class="paramname">map</td><td><a class="el" href="classMap.html" title="Map class describes static environment. ">Map</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True, if there is a line of sight between the cells, otherwise - false. </dd></dl>
+
+<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00225">225</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
 
 </div>
 </div>
@@ -186,7 +212,18 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00175">175</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
+<p>Checks traversability of all cells on grid affected by agent's body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>i-coordinate of cell. </td></tr>
+    <tr><td class="paramname">y</td><td>j-coordinate of cell. </td></tr>
+    <tr><td class="paramname">map</td><td><a class="el" href="classMap.html" title="Map class describes static environment. ">Map</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Traversability of all cells affected by agent's body </dd></dl>
+
+<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00206">206</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +259,17 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00293">293</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
+<p>Returns all cells on grid that are affected by agent in position (i,j). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>i-coordinate of first cell of line. </td></tr>
+    <tr><td class="paramname">j</td><td>j-coordinate of first cell of line. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>All cells that are affected by agent in position (i,j). </dd></dl>
+
+<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00340">340</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
 
 </div>
 </div>
@@ -278,7 +325,20 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00059">59</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
+<p>Returns all cells on grid that are affected by agent during moving along a line. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>i-coordinate of first cell of line. </td></tr>
+    <tr><td class="paramname">y1</td><td>j-coordinate of first cell of line. </td></tr>
+    <tr><td class="paramname">x2</td><td>i-coordinate of last cell of line. </td></tr>
+    <tr><td class="paramname">y2</td><td>j-coordinate of last cell of line. </td></tr>
+    <tr><td class="paramname">map</td><td><a class="el" href="classMap.html" title="Map class describes static environment. ">Map</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>All cells that are affected by agent during moving along a line. </dd></dl>
+
+<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00084">84</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
 
 </div>
 </div>
@@ -304,52 +364,15 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00041">41</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
+<p>Set size of agent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">agentSize</td><td>Size of <a class="el" href="classAgent.html" title="Agent class implements base agent interface and behavior. ">Agent</a> relative to grid cell size. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ac810fe22dbe7404a1ef0af18794a2418"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double LineOfSight::agentSize</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00301">301</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4d324bc30f1744fdf1622c223793bdf4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::pair&lt;int, int&gt; &gt; LineOfSight::cells</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00302">302</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
+<p>Definition at line <a class="el" href="LineOfSight_8h_source.html#l00057">57</a> of file <a class="el" href="LineOfSight_8h_source.html">LineOfSight.h</a>.</p>
 
 </div>
 </div>
@@ -362,7 +385,7 @@ template&lt;class T &gt; </div>
 <hr size="1"><div style="align: right;">
 <a href="http://wiki.ros.org/ORCAStar">ORCAStar</a><br />
 Author(s): Stepan Drgachev</br />
-<small>autogenerated on Sun May 3 2020 07:52:53</small>
+<small>autogenerated on Wed May 20 2020 15:51:17</small>
 </div>
 </body>
 </html>

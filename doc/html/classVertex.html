@@ -9,6 +9,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -28,9 +29,12 @@
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classVertex-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Vertex Class Reference</div>  </div>
+<div class="title">Vertex Class Reference<div class="ingroups"><a class="el" href="group__ORCAStarLib.html">ORCAStar Library</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classVertex.html" title="The Vertex class defines a vertex of an obstacle polygon. ">Vertex</a> class defines a vertex of an obstacle polygon.  
+ <a href="classVertex.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Geom_8h_source.html">Geom.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -38,76 +42,105 @@ Inheritance diagram for Vertex:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVertex__inherit__graph.png" border="0" usemap="#Vertex_inherit__map" alt="Inheritance graph"/></div>
 <map name="Vertex_inherit__map" id="Vertex_inherit__map">
-<area shape="rect" id="node2" href="classPoint.html" title="Point" alt="" coords="9,5,61,32"/>
+<area shape="rect" id="node2" href="classPoint.html" title="The Point class defines a position (or euclidean vector from (0,0)) in 2D space. " alt="" coords="9,5,61,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2612728dbae05e941c5e1fe092ac19c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVertex.html#a2612728dbae05e941c5e1fe092ac19c8">IsConvex</a> () const </td></tr>
+<tr class="memdesc:a2612728dbae05e941c5e1fe092ac19c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return convexity of vertex.  <a href="#a2612728dbae05e941c5e1fe092ac19c8">More...</a><br /></td></tr>
 <tr class="separator:a2612728dbae05e941c5e1fe092ac19c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e084de50f72360f5d1374b2cfda7716"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVertex.html">Vertex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVertex.html#a4e084de50f72360f5d1374b2cfda7716">operator=</a> (const <a class="el" href="classVertex.html">Vertex</a> &amp;obj)</td></tr>
+<tr class="memdesc:a4e084de50f72360f5d1374b2cfda7716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator.  <a href="#a4e084de50f72360f5d1374b2cfda7716">More...</a><br /></td></tr>
 <tr class="separator:a4e084de50f72360f5d1374b2cfda7716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec159342bb2a5903bd82a84b9b4a2554"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVertex.html#aec159342bb2a5903bd82a84b9b4a2554">SetConvex</a> (bool cvx)</td></tr>
+<tr class="memdesc:aec159342bb2a5903bd82a84b9b4a2554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets convexity of vertex.  <a href="#aec159342bb2a5903bd82a84b9b4a2554">More...</a><br /></td></tr>
 <tr class="separator:aec159342bb2a5903bd82a84b9b4a2554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97488994a2482d70da74e1b91d40e169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVertex.html#a97488994a2482d70da74e1b91d40e169">Vertex</a> ()</td></tr>
+<tr class="memdesc:a97488994a2482d70da74e1b91d40e169"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classVertex.html" title="The Vertex class defines a vertex of an obstacle polygon. ">Vertex</a> default constructor.  <a href="#a97488994a2482d70da74e1b91d40e169">More...</a><br /></td></tr>
 <tr class="separator:a97488994a2482d70da74e1b91d40e169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa700ddce6002b73d4ff2741ad3a70aef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVertex.html#aa700ddce6002b73d4ff2741ad3a70aef">Vertex</a> (float <a class="el" href="classPoint.html#a05dfe2dfbde813ad234b514f30e662f1">x</a>, float <a class="el" href="classPoint.html#a6101960c8d2d4e8ea1d32c9234bbeb8d">y</a>, bool cvx=false)</td></tr>
+<tr class="memdesc:aa700ddce6002b73d4ff2741ad3a70aef"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classVertex.html" title="The Vertex class defines a vertex of an obstacle polygon. ">Vertex</a> constructor.  <a href="#aa700ddce6002b73d4ff2741ad3a70aef">More...</a><br /></td></tr>
 <tr class="separator:aa700ddce6002b73d4ff2741ad3a70aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1b67a989ea6e8789b4bb253ba1c0c64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVertex.html#ab1b67a989ea6e8789b4bb253ba1c0c64">Vertex</a> (const <a class="el" href="classPoint.html">Point</a> &amp;obj, bool cvx=false)</td></tr>
+<tr class="memdesc:ab1b67a989ea6e8789b4bb253ba1c0c64"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classVertex.html" title="The Vertex class defines a vertex of an obstacle polygon. ">Vertex</a> constructor.  <a href="#ab1b67a989ea6e8789b4bb253ba1c0c64">More...</a><br /></td></tr>
 <tr class="separator:ab1b67a989ea6e8789b4bb253ba1c0c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cc15271f6f50966a625ce6354706963"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVertex.html#a9cc15271f6f50966a625ce6354706963">Vertex</a> (const <a class="el" href="classVertex.html">Vertex</a> &amp;obj)</td></tr>
+<tr class="memdesc:a9cc15271f6f50966a625ce6354706963"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classVertex.html" title="The Vertex class defines a vertex of an obstacle polygon. ">Vertex</a> copy constructor.  <a href="#a9cc15271f6f50966a625ce6354706963">More...</a><br /></td></tr>
 <tr class="separator:a9cc15271f6f50966a625ce6354706963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a425ef44e5337dcaff578cf9129cc96bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVertex.html#a425ef44e5337dcaff578cf9129cc96bf">~Vertex</a> () override=default</td></tr>
+<tr class="memdesc:a425ef44e5337dcaff578cf9129cc96bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="#a425ef44e5337dcaff578cf9129cc96bf">More...</a><br /></td></tr>
 <tr class="separator:a425ef44e5337dcaff578cf9129cc96bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classPoint"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classPoint')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classPoint.html">Point</a></td></tr>
 <tr class="memitem:aafbeaf54232b3422be8f58076d35a658 inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#aafbeaf54232b3422be8f58076d35a658">Det</a> (<a class="el" href="classPoint.html">Point</a> another) const </td></tr>
+<tr class="memdesc:aafbeaf54232b3422be8f58076d35a658 inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the determinant of matrix.  <a href="#aafbeaf54232b3422be8f58076d35a658">More...</a><br /></td></tr>
 <tr class="separator:aafbeaf54232b3422be8f58076d35a658 inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7063322b1ac8bd70c4d931b3cf2e7fde inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#a7063322b1ac8bd70c4d931b3cf2e7fde">EuclideanNorm</a> () const </td></tr>
+<tr class="memdesc:a7063322b1ac8bd70c4d931b3cf2e7fde inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes euclidean norm of vector.  <a href="#a7063322b1ac8bd70c4d931b3cf2e7fde">More...</a><br /></td></tr>
 <tr class="separator:a7063322b1ac8bd70c4d931b3cf2e7fde inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6128036073cd09c8bedf1dcd52d7014 inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">std::pair&lt; float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#ad6128036073cd09c8bedf1dcd52d7014">GetPair</a> ()</td></tr>
+<tr class="memdesc:ad6128036073cd09c8bedf1dcd52d7014 inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates STL pair (x,y) from point.  <a href="#ad6128036073cd09c8bedf1dcd52d7014">More...</a><br /></td></tr>
 <tr class="separator:ad6128036073cd09c8bedf1dcd52d7014 inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe07a319fd753f68557f650b130338f inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#a0fe07a319fd753f68557f650b130338f">operator*</a> (float k) const </td></tr>
+<tr class="memdesc:a0fe07a319fd753f68557f650b130338f inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">operator *  <a href="#a0fe07a319fd753f68557f650b130338f">More...</a><br /></td></tr>
 <tr class="separator:a0fe07a319fd753f68557f650b130338f inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45500f7ac78206d777f52d937f8020dd inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#a45500f7ac78206d777f52d937f8020dd">operator+</a> (const <a class="el" href="classPoint.html">Point</a> &amp;another) const </td></tr>
+<tr class="memdesc:a45500f7ac78206d777f52d937f8020dd inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">operator +  <a href="#a45500f7ac78206d777f52d937f8020dd">More...</a><br /></td></tr>
 <tr class="separator:a45500f7ac78206d777f52d937f8020dd inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab685bb4d4555b43c96aeebb1d6fadc0 inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#aab685bb4d4555b43c96aeebb1d6fadc0">operator-</a> (const <a class="el" href="classPoint.html">Point</a> &amp;another) const </td></tr>
+<tr class="memdesc:aab685bb4d4555b43c96aeebb1d6fadc0 inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">operator -  <a href="#aab685bb4d4555b43c96aeebb1d6fadc0">More...</a><br /></td></tr>
 <tr class="separator:aab685bb4d4555b43c96aeebb1d6fadc0 inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99380b62b682c34a88713556df1287cf inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#a99380b62b682c34a88713556df1287cf">operator-</a> () const </td></tr>
+<tr class="memdesc:a99380b62b682c34a88713556df1287cf inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">operator -  <a href="#a99380b62b682c34a88713556df1287cf">More...</a><br /></td></tr>
 <tr class="separator:a99380b62b682c34a88713556df1287cf inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa21fb30f7d583d303e2dbbcd21a223ea inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#aa21fb30f7d583d303e2dbbcd21a223ea">operator/</a> (float k) const </td></tr>
+<tr class="memdesc:aa21fb30f7d583d303e2dbbcd21a223ea inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">operator /  <a href="#aa21fb30f7d583d303e2dbbcd21a223ea">More...</a><br /></td></tr>
 <tr class="separator:aa21fb30f7d583d303e2dbbcd21a223ea inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22ea6b600dd5df85cfe4eab66d57e423 inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classPoint.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#a22ea6b600dd5df85cfe4eab66d57e423">operator=</a> (const <a class="el" href="classPoint.html">Point</a> &amp;obj)</td></tr>
+<tr class="memdesc:a22ea6b600dd5df85cfe4eab66d57e423 inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator.  <a href="#a22ea6b600dd5df85cfe4eab66d57e423">More...</a><br /></td></tr>
 <tr class="separator:a22ea6b600dd5df85cfe4eab66d57e423 inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03111076c693bd358d6d085342f230bd inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#a03111076c693bd358d6d085342f230bd">operator==</a> (const <a class="el" href="classPoint.html">Point</a> &amp;another) const </td></tr>
+<tr class="memdesc:a03111076c693bd358d6d085342f230bd inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">operator ==  <a href="#a03111076c693bd358d6d085342f230bd">More...</a><br /></td></tr>
 <tr class="separator:a03111076c693bd358d6d085342f230bd inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad92f2337b839a94ce97dcdb439b4325a inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#ad92f2337b839a94ce97dcdb439b4325a">Point</a> ()</td></tr>
+<tr class="memdesc:ad92f2337b839a94ce97dcdb439b4325a inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPoint.html" title="The Point class defines a position (or euclidean vector from (0,0)) in 2D space. ">Point</a> default constructor.  <a href="#ad92f2337b839a94ce97dcdb439b4325a">More...</a><br /></td></tr>
 <tr class="separator:ad92f2337b839a94ce97dcdb439b4325a inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30bc8409287de4f43e160664be834636 inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#a30bc8409287de4f43e160664be834636">Point</a> (float <a class="el" href="classPoint.html#a05dfe2dfbde813ad234b514f30e662f1">x</a>, float <a class="el" href="classPoint.html#a6101960c8d2d4e8ea1d32c9234bbeb8d">y</a>)</td></tr>
+<tr class="memdesc:a30bc8409287de4f43e160664be834636 inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPoint.html" title="The Point class defines a position (or euclidean vector from (0,0)) in 2D space. ">Point</a> constructor with parameters.  <a href="#a30bc8409287de4f43e160664be834636">More...</a><br /></td></tr>
 <tr class="separator:a30bc8409287de4f43e160664be834636 inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1ecd562cc027bb80af3176c5578ec84 inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#af1ecd562cc027bb80af3176c5578ec84">Point</a> (const <a class="el" href="classPoint.html">Point</a> &amp;obj)</td></tr>
+<tr class="memdesc:af1ecd562cc027bb80af3176c5578ec84 inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPoint.html" title="The Point class defines a position (or euclidean vector from (0,0)) in 2D space. ">Point</a> copy constructor.  <a href="#af1ecd562cc027bb80af3176c5578ec84">More...</a><br /></td></tr>
 <tr class="separator:af1ecd562cc027bb80af3176c5578ec84 inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77a10652ebd8f15fefc0b35e0415294a inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#a77a10652ebd8f15fefc0b35e0415294a">ScalarProduct</a> (const <a class="el" href="classPoint.html">Point</a> &amp;another) const </td></tr>
+<tr class="memdesc:a77a10652ebd8f15fefc0b35e0415294a inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes scalar product of vectors (this * anoher)  <a href="#a77a10652ebd8f15fefc0b35e0415294a">More...</a><br /></td></tr>
 <tr class="separator:a77a10652ebd8f15fefc0b35e0415294a inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8c4606483dd03424b6233cedd0f65c0 inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#af8c4606483dd03424b6233cedd0f65c0">SquaredEuclideanNorm</a> () const </td></tr>
+<tr class="memdesc:af8c4606483dd03424b6233cedd0f65c0 inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes squared euclidean norm of vector.  <a href="#af8c4606483dd03424b6233cedd0f65c0">More...</a><br /></td></tr>
 <tr class="separator:af8c4606483dd03424b6233cedd0f65c0 inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb749eb830fb47de85cf83274e381f7 inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#a5cb749eb830fb47de85cf83274e381f7">ToString</a> () const </td></tr>
+<tr class="memdesc:a5cb749eb830fb47de85cf83274e381f7 inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates STL string, which contains x,y values.  <a href="#a5cb749eb830fb47de85cf83274e381f7">More...</a><br /></td></tr>
 <tr class="separator:a5cb749eb830fb47de85cf83274e381f7 inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5280e0f2f34b35b9bdb26b3be16c1c6 inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#aa5280e0f2f34b35b9bdb26b3be16c1c6">X</a> () const </td></tr>
+<tr class="memdesc:aa5280e0f2f34b35b9bdb26b3be16c1c6 inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns X-coordinate of the point.  <a href="#aa5280e0f2f34b35b9bdb26b3be16c1c6">More...</a><br /></td></tr>
 <tr class="separator:aa5280e0f2f34b35b9bdb26b3be16c1c6 inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78cfcead5a936a3e40ad55df6fd355a0 inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#a78cfcead5a936a3e40ad55df6fd355a0">Y</a> () const </td></tr>
+<tr class="memdesc:a78cfcead5a936a3e40ad55df6fd355a0 inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Y-coordinate of the point.  <a href="#a78cfcead5a936a3e40ad55df6fd355a0">More...</a><br /></td></tr>
 <tr class="separator:a78cfcead5a936a3e40ad55df6fd355a0 inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6adb26e1dd0fa3b97131f34f3b7d8c5a inherit pub_methods_classPoint"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPoint.html#a6adb26e1dd0fa3b97131f34f3b7d8c5a">~Point</a> ()=default</td></tr>
+<tr class="memdesc:a6adb26e1dd0fa3b97131f34f3b7d8c5a inherit pub_methods_classPoint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="#a6adb26e1dd0fa3b97131f34f3b7d8c5a">More...</a><br /></td></tr>
 <tr class="separator:a6adb26e1dd0fa3b97131f34f3b7d8c5a inherit pub_methods_classPoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a6536ddacf5055021f21ef7aebac93700"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVertex.html#a6536ddacf5055021f21ef7aebac93700">convex</a></td></tr>
+<tr class="memdesc:a6536ddacf5055021f21ef7aebac93700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convexity of vertex.  <a href="#a6536ddacf5055021f21ef7aebac93700">More...</a><br /></td></tr>
 <tr class="separator:a6536ddacf5055021f21ef7aebac93700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="Geom_8h_source.html#l00070">70</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
+<div class="textblock"><p>The <a class="el" href="classVertex.html" title="The Vertex class defines a vertex of an obstacle polygon. ">Vertex</a> class defines a vertex of an obstacle polygon. </p>
+
+<p>Definition at line <a class="el" href="Geom_8h_source.html#l00213">213</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a97488994a2482d70da74e1b91d40e169"></a>
 <div class="memitem">
@@ -130,7 +163,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Geom_8h_source.html#l00073">73</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
+<p><a class="el" href="classVertex.html" title="The Vertex class defines a vertex of an obstacle polygon. ">Vertex</a> default constructor. </p>
+
+<p>Definition at line <a class="el" href="Geom_8h_source.html#l00219">219</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
 
 </div>
 </div>
@@ -172,7 +207,17 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Geom_8h_source.html#l00074">74</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
+<p><a class="el" href="classVertex.html" title="The Vertex class defines a vertex of an obstacle polygon. ">Vertex</a> constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>X-coordinate of the vertex. </td></tr>
+    <tr><td class="paramname">y</td><td>Y-coordinate of the vertex. </td></tr>
+    <tr><td class="paramname">cvx</td><td>Convexity of vertex </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Geom_8h_source.html#l00227">227</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
 
 </div>
 </div>
@@ -208,7 +253,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Geom_8h_source.html#l00075">75</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
+<p><a class="el" href="classVertex.html" title="The Vertex class defines a vertex of an obstacle polygon. ">Vertex</a> constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>Position of vertex </td></tr>
+    <tr><td class="paramname">cvx</td><td>Convexity of vertex </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Geom_8h_source.html#l00234">234</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
 
 </div>
 </div>
@@ -234,7 +288,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Geom_8h_source.html#l00076">76</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
+<p><a class="el" href="classVertex.html" title="The Vertex class defines a vertex of an obstacle polygon. ">Vertex</a> copy constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>Object to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Geom_8h_source.html#l00240">240</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
 
 </div>
 </div>
@@ -259,6 +321,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default destructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -275,7 +339,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Geom_8cpp_source.html#l00049">49</a> of file <a class="el" href="Geom_8cpp_source.html">Geom.cpp</a>.</p>
+<p>Return convexity of vertex. </p>
+<dl class="section return"><dt>Returns</dt><dd>Convexity of vertex. </dd></dl>
+
+<p>Definition at line <a class="el" href="Geom_8cpp_source.html#l00055">55</a> of file <a class="el" href="Geom_8cpp_source.html">Geom.cpp</a>.</p>
 
 </div>
 </div>
@@ -301,7 +368,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Geom_8h_source.html#l00241">241</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
+<p>Assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>Object to assign </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to object. </dd></dl>
+
+<p>Definition at line <a class="el" href="Geom_8h_source.html#l00518">518</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
 
 </div>
 </div>
@@ -319,7 +395,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Geom_8cpp_source.html#l00055">55</a> of file <a class="el" href="Geom_8cpp_source.html">Geom.cpp</a>.</p>
+<p>Sets convexity of vertex. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cvx</td><td>Convexity of vertex. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Geom_8cpp_source.html#l00061">61</a> of file <a class="el" href="Geom_8cpp_source.html">Geom.cpp</a>.</p>
 
 </div>
 </div>
@@ -342,7 +426,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Geom_8h_source.html#l00084">84</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
+<p>Convexity of vertex. </p>
+
+<p>Definition at line <a class="el" href="Geom_8h_source.html#l00267">267</a> of file <a class="el" href="Geom_8h_source.html">Geom.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +442,7 @@ Private Attributes</h2></td></tr>
 <hr size="1"><div style="align: right;">
 <a href="http://wiki.ros.org/ORCAStar">ORCAStar</a><br />
 Author(s): Stepan Drgachev</br />
-<small>autogenerated on Sun May 3 2020 07:52:53</small>
+<small>autogenerated on Wed May 20 2020 15:51:17</small>
 </div>
 </body>
 </html>

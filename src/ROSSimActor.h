@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains ROSSimActor class.
+*/
+
+
 #include <vector>
 #include <sstream>
 
@@ -13,29 +19,46 @@
 #ifndef ORCASTAR_ROSSIMACTOR_H
 #define ORCASTAR_ROSSIMACTOR_H
 
-
-
+/*!
+ * \brief The ROSSimActor class is implementation of the intermediate node between the simulation and the agent.
+ * \ingroup ORCAStarROS
+ */
 class ROSSimActor
 {
     public:
+         /*!
+         * \brief ROSSimActor default constructor
+         */
         ROSSimActor();
+
+        /*!
+          \brief ROSSimActor destructor
+          */
         ~ROSSimActor();
+
+        /*!
+         * \brief Receives all agents states and transmits neighbours states to single agent module.
+         * \param msg All agents states message
+         */
         void ReceiveAgentStates(const ORCAStar::AgentState &msg);
+
+        /*!
+         * \brief Receives computed velocity from agent module and transmits it to simulation module.
+         * \param msg New velocity message.
+         */
         void TransmitAgentVelocity(const geometry_msgs::Point32 &msg);
-        void CreateORCAInputMsg();
+
+
 
     private:
 
-
+        //! \cond
         bool InitAgent(ORCAStar::Init::Request  &req, ORCAStar::Init::Response &res);
 
 
         size_t id;
         size_t agNumber ;
         float sightRad;
-//        std::vector<Point> positions;
-//        std::vector<Point> velocities;
-//        std::vector<float>   radius;
 
         ORCAStar::AgentVelocity agentVelocityMsg;
         ORCAStar::ORCAInput inputORCAMsg;
@@ -49,6 +72,8 @@ class ROSSimActor
         ros::Subscriber ROSSimActorToAgentSub;
 
         bool initFlag;
+
+        //! \endcond
 };
 
 

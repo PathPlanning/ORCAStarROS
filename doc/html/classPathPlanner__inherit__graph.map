@@ -1,4 +1,4 @@
 <map id="PathPlanner" name="PathPlanner">
-<area shape="rect" id="node2" href="$classDirectPlanner.html" title="DirectPlanner" alt="" coords="5,80,107,107"/>
-<area shape="rect" id="node3" href="$classThetaStar.html" title="ThetaStar" alt="" coords="131,80,210,107"/>
+<area shape="rect" id="node2" href="$classDirectPlanner.html" title="DirectPlanner class implements simple planner, which creates direct path from start to goal position..." alt="" coords="5,80,107,107"/>
+<area shape="rect" id="node3" href="$classThetaStar.html" title="ThetaStar class implements Theta* algorithm, which creates path from start to goal position..." alt="" coords="131,80,210,107"/>
 </map>

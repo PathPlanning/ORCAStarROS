@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains XMLLogger class implementation.
+*/
+
+
 #include "XMLLogger.h"
 
 XMLLogger::XMLLogger(std::string fileName, std::string inpFileName)

@@ -1,11 +1,25 @@
+/*!
+\file
+\brief File contains program for visualization launching.
+\ingroup ORCAStarROS
+*/
 
 #include <ros/ros.h>
 #include <visualization_msgs/Marker.h>
 #include <visualization_msgs/MarkerArray.h>
 #include "ORCAStar/AgentState.h"
 
+/*!
+ * \brief ROS publisher for visualization markers
+ *
+ */
 ros::Publisher marker_pub;
 
+
+/*!
+ * \brief Updates visualisation every time, when message appears
+ * \param msg Agents state message
+ */
 void Update(const ORCAStar::AgentState &msg)
 {
     uint32_t shape = visualization_msgs::Marker::CYLINDER;
@@ -49,6 +63,8 @@ void Update(const ORCAStar::AgentState &msg)
     marker_pub.publish(agents);
 }
 
+
+
 int main( int argc, char** argv )
 {
   ros::init(argc, argv, "basic_shapes");
@@ -58,9 +74,6 @@ int main( int argc, char** argv )
 
   ros::Subscriber ROSSimActorSub = n.subscribe("AgentStates", 1000, Update);
 
-
-   ros::spin();
-
-
+  ros::spin();
 }
 

@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains ThetaStar class implementation.
+*/
+
+
 #include "ThetaStar.h"
 
 ThetaStar::ThetaStar(const Map &map, const EnvironmentOptions &options, const Point &start, const Point &goal, const float &radius)
@@ -349,23 +355,3 @@ ThetaStar *ThetaStar::Clone() const
     return new ThetaStar(*this);
 }
 
-void ThetaStar::AddPointToPath(Point p)
-{
-    currPath.push_front(p);
-}
-
-Point ThetaStar::PullOutNext()
-{
-    if(currPath.size() > 0)
-    {
-        Point res = currPath.front();
-        if(currPath.size() > 1)
-        {
-            currPath.pop_front();
-        }
-        return res;
-    }
-
-
-    return Point();
-}

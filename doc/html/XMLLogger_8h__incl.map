@@ -1,12 +1,12 @@
 <map id="XMLLogger.h" name="XMLLogger.h">
-<area shape="rect" id="node7" href="$Logger_8h.html" title="Logger.h" alt="" coords="479,80,551,107"/>
-<area shape="rect" id="node8" href="$Summary_8h.html" title="Summary.h" alt="" coords="195,155,285,181"/>
-<area shape="rect" id="node10" href="$Geom_8h.html" title="Geom.h" alt="" coords="766,453,834,480"/>
-<area shape="rect" id="node15" href="$Agent_8h.html" title="Agent.h" alt="" coords="672,155,739,181"/>
-<area shape="rect" id="node14" href="$Const_8h.html" title="Const.h" alt="" coords="586,528,654,555"/>
-<area shape="rect" id="node16" href="$PathPlanner_8h.html" title="PathPlanner.h" alt="" coords="331,304,435,331"/>
-<area shape="rect" id="node20" href="$ThetaStar_8h.html" title="ThetaStar.h" alt="" coords="477,229,568,256"/>
-<area shape="rect" id="node18" href="$EnvironmentOptions_8h.html" title="EnvironmentOptions.h" alt="" coords="430,453,581,480"/>
-<area shape="rect" id="node19" href="$Map_8h.html" title="Map.h" alt="" coords="356,379,415,405"/>
-<area shape="rect" id="node22" href="$LineOfSight_8h.html" title="LineOfSight.h" alt="" coords="661,304,763,331"/>
+<area shape="rect" id="node7" href="$Logger_8h.html" title="File contains Logger class. " alt="" coords="479,80,551,107"/>
+<area shape="rect" id="node8" href="$Summary_8h.html" title="File contains Summary class. " alt="" coords="195,155,285,181"/>
+<area shape="rect" id="node10" href="$Geom_8h.html" title="File contains Node, Point, Line, Vertex, ObstacleSegment classes and some methods and functions imple..." alt="" coords="766,453,834,480"/>
+<area shape="rect" id="node15" href="$Agent_8h.html" title="File contains Agent class and AgentParam class. " alt="" coords="672,155,739,181"/>
+<area shape="rect" id="node14" href="$Const_8h.html" title="File contains main constants. " alt="" coords="586,528,654,555"/>
+<area shape="rect" id="node16" href="$PathPlanner_8h.html" title="File contains PathPlanner class. " alt="" coords="331,304,435,331"/>
+<area shape="rect" id="node20" href="$ThetaStar_8h.html" title="File contains ThetaStar class. " alt="" coords="477,229,568,256"/>
+<area shape="rect" id="node18" href="$EnvironmentOptions_8h.html" title="File contains EnvironmentOptions class. " alt="" coords="430,453,581,480"/>
+<area shape="rect" id="node19" href="$Map_8h.html" title="File contains Map class. " alt="" coords="356,379,415,405"/>
+<area shape="rect" id="node22" href="$LineOfSight_8h.html" title="File contains LineOfSight class. " alt="" coords="661,304,763,331"/>
 </map>

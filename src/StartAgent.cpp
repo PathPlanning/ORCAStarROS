@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains program for single agent navigation node launching.
+*/
+
+
 #include "ROSAgent.h"
 #include "ros/ros.h"
 

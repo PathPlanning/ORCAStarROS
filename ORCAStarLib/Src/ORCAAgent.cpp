@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains ORCAAgent class implementation.
+*/
+
+
 #include "ORCAAgent.h"
 
 ORCAAgent::ORCAAgent() : Agent() { fakeRadius = 0;}

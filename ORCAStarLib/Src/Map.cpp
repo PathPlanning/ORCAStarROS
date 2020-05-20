@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains Map class implementation.
+*/
+
+
 #include "Map.h"
 
 Map::Map()
@@ -190,11 +196,6 @@ Map &Map::operator =(const Map &obj)
     return *this;
 }
 
-
-std::vector<std::vector<ObstacleSegment>> &Map::GetObstacleSegments() const
-{
-    return *obstacles;
-}
 
 
 

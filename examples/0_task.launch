@@ -1,9 +1,9 @@
 <launch>
 <node name="map_server" pkg="map_server" type="map_server" args="/home/stepan/Projects/ORCAStar/ORCAStar/examples/0_task.yml"/>
 <node name="ROSMission" pkg="ORCAStar" type="ROSMission" output="screen">
-<param name="agents_number" type="int" value="40"/>
+<param name="agents_number" type="int" value="5"/>
 <param name="task" type="string" value="/home/stepan/Projects/ORCAStar/ORCAStar/examples/0_task.xml"/>
-<param name="threshhold" type="int" value="10000"/>
+<param name="threshhold" type="int" value="-1"/>
 <param name="end" type="bool" value="True"/>
 </node>
 <node name="$(anon ROSSimActor_0)" pkg="ORCAStar" type="ROSSimActor"/>
@@ -25,146 +25,6 @@
 <node name="$(anon ROSSimActor_4)" pkg="ORCAStar" type="ROSSimActor"/>
 <node name="$(anon ROSAgent_4)" pkg="ORCAStar" type="ROSAgent">
 <param name="id" type="int" value="4"/>
-</node>
-<node name="$(anon ROSSimActor_5)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_5)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="5"/>
-</node>
-<node name="$(anon ROSSimActor_6)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_6)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="6"/>
-</node>
-<node name="$(anon ROSSimActor_7)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_7)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="7"/>
-</node>
-<node name="$(anon ROSSimActor_8)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_8)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="8"/>
-</node>
-<node name="$(anon ROSSimActor_9)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_9)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="9"/>
-</node>
-<node name="$(anon ROSSimActor_10)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_10)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="10"/>
-</node>
-<node name="$(anon ROSSimActor_11)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_11)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="11"/>
-</node>
-<node name="$(anon ROSSimActor_12)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_12)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="12"/>
-</node>
-<node name="$(anon ROSSimActor_13)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_13)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="13"/>
-</node>
-<node name="$(anon ROSSimActor_14)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_14)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="14"/>
-</node>
-<node name="$(anon ROSSimActor_15)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_15)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="15"/>
-</node>
-<node name="$(anon ROSSimActor_16)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_16)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="16"/>
-</node>
-<node name="$(anon ROSSimActor_17)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_17)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="17"/>
-</node>
-<node name="$(anon ROSSimActor_18)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_18)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="18"/>
-</node>
-<node name="$(anon ROSSimActor_19)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_19)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="19"/>
-</node>
-<node name="$(anon ROSSimActor_20)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_20)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="20"/>
-</node>
-<node name="$(anon ROSSimActor_21)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_21)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="21"/>
-</node>
-<node name="$(anon ROSSimActor_22)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_22)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="22"/>
-</node>
-<node name="$(anon ROSSimActor_23)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_23)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="23"/>
-</node>
-<node name="$(anon ROSSimActor_24)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_24)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="24"/>
-</node>
-<node name="$(anon ROSSimActor_25)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_25)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="25"/>
-</node>
-<node name="$(anon ROSSimActor_26)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_26)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="26"/>
-</node>
-<node name="$(anon ROSSimActor_27)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_27)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="27"/>
-</node>
-<node name="$(anon ROSSimActor_28)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_28)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="28"/>
-</node>
-<node name="$(anon ROSSimActor_29)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_29)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="29"/>
-</node>
-<node name="$(anon ROSSimActor_30)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_30)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="30"/>
-</node>
-<node name="$(anon ROSSimActor_31)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_31)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="31"/>
-</node>
-<node name="$(anon ROSSimActor_32)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_32)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="32"/>
-</node>
-<node name="$(anon ROSSimActor_33)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_33)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="33"/>
-</node>
-<node name="$(anon ROSSimActor_34)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_34)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="34"/>
-</node>
-<node name="$(anon ROSSimActor_35)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_35)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="35"/>
-</node>
-<node name="$(anon ROSSimActor_36)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_36)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="36"/>
-</node>
-<node name="$(anon ROSSimActor_37)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_37)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="37"/>
-</node>
-<node name="$(anon ROSSimActor_38)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_38)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="38"/>
-</node>
-<node name="$(anon ROSSimActor_39)" pkg="ORCAStar" type="ROSSimActor"/>
-<node name="$(anon ROSAgent_39)" pkg="ORCAStar" type="ROSAgent">
-<param name="id" type="int" value="39"/>
 </node>
 <node name="rviz" pkg="rviz" type="rviz"/>
 <node name="ROSVisualization" pkg="ORCAStar" type="ROSVisualization"/>

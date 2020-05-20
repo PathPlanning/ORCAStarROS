@@ -1,3 +1,8 @@
+/*!
+\file
+\brief File contains Agent class implementation.
+*/
+
 #include "Agent.h"
 
 

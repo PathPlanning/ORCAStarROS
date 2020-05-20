@@ -1,14 +1,14 @@
 <map id="XMLReader.cpp" name="XMLReader.cpp">
-<area shape="rect" id="node2" href="$XMLReader_8h.html" title="XMLReader.h" alt="" coords="746,80,849,107"/>
-<area shape="rect" id="node6" href="$Reader_8h.html" title="Reader.h" alt="" coords="183,155,257,181"/>
-<area shape="rect" id="node13" href="$Const_8h.html" title="Const.h" alt="" coords="823,603,891,629"/>
-<area shape="rect" id="node15" href="$Agent_8h.html" title="Agent.h" alt="" coords="855,229,921,256"/>
-<area shape="rect" id="node18" href="$ThetaStar_8h.html" title="ThetaStar.h" alt="" coords="576,304,667,331"/>
-<area shape="rect" id="node25" href="$ORCAAgent_8h.html" title="ORCAAgent.h" alt="" coords="744,155,851,181"/>
-<area shape="rect" id="node26" href="$DirectPlanner_8h.html" title="DirectPlanner.h" alt="" coords="257,304,369,331"/>
-<area shape="rect" id="node8" href="$Map_8h.html" title="Map.h" alt="" coords="93,453,152,480"/>
-<area shape="rect" id="node14" href="$EnvironmentOptions_8h.html" title="EnvironmentOptions.h" alt="" coords="227,453,378,480"/>
-<area shape="rect" id="node9" href="$Geom_8h.html" title="Geom.h" alt="" coords="567,528,635,555"/>
-<area shape="rect" id="node16" href="$PathPlanner_8h.html" title="PathPlanner.h" alt="" coords="257,379,361,405"/>
-<area shape="rect" id="node21" href="$LineOfSight_8h.html" title="LineOfSight.h" alt="" coords="623,379,724,405"/>
+<area shape="rect" id="node2" href="$XMLReader_8h.html" title="File contains XMLReader class. " alt="" coords="746,80,849,107"/>
+<area shape="rect" id="node6" href="$Reader_8h.html" title="File contains Reader class. " alt="" coords="183,155,257,181"/>
+<area shape="rect" id="node13" href="$Const_8h.html" title="File contains main constants. " alt="" coords="823,603,891,629"/>
+<area shape="rect" id="node15" href="$Agent_8h.html" title="File contains Agent class and AgentParam class. " alt="" coords="855,229,921,256"/>
+<area shape="rect" id="node18" href="$ThetaStar_8h.html" title="File contains ThetaStar class. " alt="" coords="576,304,667,331"/>
+<area shape="rect" id="node25" href="$ORCAAgent_8h.html" title="File contains ORCAAgent class. " alt="" coords="744,155,851,181"/>
+<area shape="rect" id="node26" href="$DirectPlanner_8h.html" title="File contains DirectPlanner class. " alt="" coords="257,304,369,331"/>
+<area shape="rect" id="node8" href="$Map_8h.html" title="File contains Map class. " alt="" coords="93,453,152,480"/>
+<area shape="rect" id="node14" href="$EnvironmentOptions_8h.html" title="File contains EnvironmentOptions class. " alt="" coords="227,453,378,480"/>
+<area shape="rect" id="node9" href="$Geom_8h.html" title="File contains Node, Point, Line, Vertex, ObstacleSegment classes and some methods and functions imple..." alt="" coords="567,528,635,555"/>
+<area shape="rect" id="node16" href="$PathPlanner_8h.html" title="File contains PathPlanner class. " alt="" coords="257,379,361,405"/>
+<area shape="rect" id="node21" href="$LineOfSight_8h.html" title="File contains LineOfSight class. " alt="" coords="623,379,724,405"/>
 </map>

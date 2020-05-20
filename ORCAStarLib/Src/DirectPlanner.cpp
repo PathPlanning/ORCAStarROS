@@ -1,3 +1,9 @@
+/*!
+\file
+\brief File contains DirectPlanner class implementation.
+*/
+
+
 #include "DirectPlanner.h"
 
 
@@ -33,13 +39,4 @@ DirectPlanner &DirectPlanner::operator =(const DirectPlanner &obj)
     return *this;
 }
 
-void DirectPlanner::AddPointToPath(Point p)
-{
-    glGoal = p;
-}
-
-Point DirectPlanner::PullOutNext()
-{
-    return glGoal;
-}
 
