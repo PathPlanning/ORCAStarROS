@@ -1,13 +1,13 @@
 actions: []
 authors: Stepan Drgachev
-brief: ORCAStar
+brief: ORCAStarROS
 bugtracker: ''
 depends:
 - geometry_msgs
 - std_msgs
 - roscpp
 - visualization_msgs
-description: "\n\n     ORCAStar\n\n  "
+description: "\n\n     ORCAStarROS\n\n  "
 license: BSD
 maintainers: ''
 msgs:
