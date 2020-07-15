@@ -27,7 +27,7 @@ Block scheme of the algorithm is shown in the figures below.
 </p>
 
 
-The implementation of ORCA* algorithm located in `./ORCAStarLib/` subdirectory. It based on [[4](https://github.com/PathPlanning/ORCA-algorithm)]. Implementation relies only on C++11 standard and STL. I/O modules use open-source library tinyXML to work with XML. It is included at the source level (i.e. .h and .cpp files are part of the project) in `./ORCAStarLib/tinyxml/` subdirectory. Full documentation for ORCA* implementation source code located [here](https://haiot4105.github.io/ORCAStarROS/group__ORCAStarLib.html).
+The implementation of ORCA* algorithm located in `./ORCAStarLib/` subdirectory. It based on [[4](https://github.com/PathPlanning/ORCA-algorithm)]. Implementation relies only on C++11 standard and STL. I/O modules use open-source library tinyXML to work with XML. It is included at the source level (i.e. .h and .cpp files are part of the project) in `./ORCAStarLib/tinyxml/` subdirectory. Full documentation for ORCA* implementation source code located [here](https://pathplanning.github.io/ORCAStarROS/group__ORCAStarLib.html).
 
 ## ROS Imlemetation
 
@@ -52,7 +52,7 @@ Tested on the following configuration:
 Download current repository to your local machine. Use
 
 ```bash
-git clone https://github.com/haiot4105/ORCAStarROS.git
+git clone https://github.com/PathPlanning/ORCAStarROS.git
 ```
 or direct downloading.
 
@@ -95,10 +95,10 @@ cd bin/test
 The main part in a navigation system is the single agent navigation module. This component can be used both for embedding a separate robot and for centralized calculation of trajectories, but using distributed computing.
 The single agent navigation implemented as a ROS node. The node operation is divided into 2 stages.
 
-At the first stage, node is initialized, the algorithms parameters and static environment data are requested from ROS services, global path is created. The node sends a request to service `initAgentServer_*id*`(Service description: [here](https://haiot4105.github.io/ORCAStarROS/srv/Init.html), `id` is identifier of agent, which sets as ROS private parameter) and awaits a response. For using ROS Agent node you should launch such service. After that, the node sends a request to the service `static_map` of `map_server` node. You should launch this node before launching ROS Agent node. 
+At the first stage, node is initialized, the algorithms parameters and static environment data are requested from ROS services, global path is created. The node sends a request to service `initAgentServer_*id*`(Service description: [here](https://pathplanning.github.io/ORCAStarROS/srv/Init.html), `id` is identifier of agent, which sets as ROS private parameter) and awaits a response. For using ROS Agent node you should launch such service. After that, the node sends a request to the service `static_map` of `map_server` node. You should launch this node before launching ROS Agent node. 
 
 At the second stage the process of following the global path starts. 
-The node waits for messages in topic `AgentInput_*id*`. After a message with input data ([msg description](https://haiot4105.github.io/ORCAStarROS/msg/ORCAInput.html)) appears in the topic `AgentInput_*id*`, new velocity computation procedure starts. New velocity publishes in the topic `AgentOutput_*id*` (in [geometry_msgs::Point32](http://docs.ros.org/api/geometry_msgs/html/msg/Point32.html) format). The second stage continues until the node is working. An illustration of the operation of the node is presented in the figure below.
+The node waits for messages in topic `AgentInput_*id*`. After a message with input data ([msg description](https://pathplanning.github.io/ORCAStarROS/msg/ORCAInput.html)) appears in the topic `AgentInput_*id*`, new velocity computation procedure starts. New velocity publishes in the topic `AgentOutput_*id*` (in [geometry_msgs::Point32](http://docs.ros.org/api/geometry_msgs/html/msg/Point32.html) format). The second stage continues until the node is working. An illustration of the operation of the node is presented in the figure below.
 
 <p align="center">
   <img width="300" src="./images/ROSAgent.png" alt="Map sheme" >
@@ -121,9 +121,9 @@ If you are launching a single instance of the node, then use parameter `id` equa
 #### I/O Format
 
 As input and output uses following ROS services and topics:
-- `initAgentServer_id` — initial input data service, which uses [Init service format](https://haiot4105.github.io/ORCAStarROS/srv/Init.html). Initial input data contains algorithms parameters, agent parameters, start and goal positions and static obstacles description in form of polygons. 
+- `initAgentServer_id` — initial input data service, which uses [Init service format](https://pathplanning.github.io/ORCAStarROS/srv/Init.html). Initial input data contains algorithms parameters, agent parameters, start and goal positions and static obstacles description in form of polygons. 
 - `static_map` — service of `map_server` [[6](http://wiki.ros.org/map_server)] node, which stores information about static environment in form of grid.
-- `AgentInput_*id*` — ROS topic for providing input data on each step of following the global path. It uses [ORCAInput message format](https://haiot4105.github.io/ORCAStarROS/msg/ORCAInput.html), which includes current position and velocity of agent and states of other agents.
+- `AgentInput_*id*` — ROS topic for providing input data on each step of following the global path. It uses [ORCAInput message format](https://pathplanning.github.io/ORCAStarROS/msg/ORCAInput.html), which includes current position and velocity of agent and states of other agents.
 -  `AgentOutput_*id*` — ROS topic for receiving result velocity from ORCAStar algorithm. It uses [geometry_msgs::Point32](http://docs.ros.org/api/geometry_msgs/html/msg/Point32.html) message format.
 
 
@@ -259,7 +259,7 @@ Input file should contain:
   *  `<allowsqueeze>` — boolean tag that defines the possibility to make diagonal moves when both adjacent cells are untraversable. The tag is ignored if cutting corners is not allowed. Default value is "false" (Theta* parameter);
   *  `<hweight>` — defines the weight of the heuristic function. Should be real number greater or equal 1. Default value is "1" (Theta* parameter);
 
-Output of simulation is made to topic `AgentStates` using message format [AgentState](https://haiot4105.github.io/ORCAStarROS/msg/AgentState.html). It includes positions, velocities and sizes of all agent on current step. 
+Output of simulation is made to topic `AgentStates` using message format [AgentState](https://pathplanning.github.io/ORCAStarROS/msg/AgentState.html). It includes positions, velocities and sizes of all agent on current step. 
 
 #### Visualisation
 The simulation visualized using `rviz`. To use visualization add floowing nodes to the launch file. Examples of rviz config files are presented in `./examples/` subdirectory.
@@ -277,9 +277,9 @@ Example of visualized simulation is presented below.
 
 ## Source Code Documentation
 
-Full source code documentation is presented [here](https://haiot4105.github.io/ORCAStarROS/).
+Full source code documentation is presented [here](https://pathplanning.github.io/ORCAStarROS/).
 
-Documentation for ROS messages and services is presented [here](https://haiot4105.github.io/ORCAStarROS/index-msg.html)
+Documentation for ROS messages and services is presented [here](https://pathplanning.github.io/ORCAStarROS/index-msg.html)
 
 ## Links
 
